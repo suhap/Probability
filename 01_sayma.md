@@ -1,1 +1,1 @@
-x
+Sayma kavramını kaç yaşında öğrendiniz? Acaba bu konuda öğrenmeniz gerek her şeyi öğrendiniz mi? Bu derste olasılık kavramı için temel oluşturacak bazı sayma kavramlarından bahsedilecektir. Bu kavramlar makine öğrenmesi gibi bilgisayar bilimlerinde olasılık konuların temellerini oluşturmaktadır. Bu bölümde ayrık nesnelerin sayılması kavramı üzerinde duracaktır. 
