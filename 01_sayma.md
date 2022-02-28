@@ -2,7 +2,7 @@
 
 İlkokuldaki öğrendiğimiz sayma kavramını derslerimiz başlamadan tekrar edilecektir. Tabiki tekrar edilecek konular olasılığın temeli olacaktır. Bu bölümde öngörülebilir durumlar için sayma işlemini ve farklı nesneleri nasıl sayılacağını öğrenelicektir. Çatısı makine öğrenmesi gibi bilgisayar bilimleri olan olasılığın temeli ise sayma kavramıdır. 
 
-# Saymanın Temel İlkeleri
+# 2. Saymanın Temel İlkeleri
 ### Toplama kulllanılarak sayma:
 Bir deneyin sonucu, m sonuç kümesinden veya n sonuç kümesinden biri olabilecekse, m sonuç kümesi ve n sonuç kümesi çakışmıyorsa yani m sonuç kümesindeki sonuçlardan herhangi biri n sonuç kümesinden herhangi biri ile aynı değilse bu deneyin olası sonuçları m+n sonuç kümesinden herhangi biridir. 
 Yukarıdaki önermeyi matematiksel notasyon şeklinde yazacak olursak: 
@@ -32,44 +32,85 @@ Birinci string ifade hash işlemine tabi tutulduktan sonra tablodaki 100 olası 
 
 ### Örnek 3
 Pelin; bir kafeteryaya ait, yalnızca sıcak içecekler kısmıyırtılmış olan aşağıdaki menüyü evinde buluyor.
-### Menü
-### Yiyecekler
-Gözleme: Kıymalı, ıspanaklı, patlıcanlı
-Poğaça: Peynirli, Patatesli
-### İçecekler
-Soğuk içecekler: Kıymalı, ıspanaklı, patlıcanlı
-Poğaça: Peynirli, Patatesli
 
-![soyutlamaTablosu](https://raw.githubusercontent.com/suhap/Probability/master/resource/menu.png)
-
+![menu](https://raw.githubusercontent.com/suhap/Probability/master/resource/menu.png)
 
 Pelin bu kafeteryayı arayıp ''bir çeşit gözleme ve birçeşit soğuk içecek'' veya ''bir çeşit poğaça ve bir çeşitsıcak içecek'' siparişi vermek istiyor. Kafeterya çalışanıbu siparişi 22 farklı şekilde verebileceğini söylüyor.Buna göre, bu kafeteryada kaç farklı sıcak içecek çeşidi vardır?
 
+Çözüm: 
 
-Dahil Etme Hariç Tutma İlkesi
+Sıcak içecek sayısı S olsun
 
-Dahil Etme-Dışlama İlkesi:
+1 gözleme + 1 soğuk içecek = 3x4 
+1 poğaça + 1 sıcak içecek = 2xS
+
+Toplam : 22 = 3x4 + 2xS  =>  S = 5
+
+
+### Dahil Etme Hariç Tutma İlkesi
 Bir deneyin sonucu A kümesinden veya B kümesinden alınabiliyorsa ve A ve B kümeleri potansiyel olarak çakışıyorsa (yani, A ∩ B = 0 olması garanti edilmiyorsa), bu durumda deneyin sonuç sayısı | A∪B| = |A|+|B| −|A∩B|.
 
-Dahil Etme-Dışlama İlkesinin rastgele A ve B kümeleri için Toplam Sayım Kuralını genelleştirdiğine dikkat edin. A∩B = 0 olduğu durumda, Dahil Etme-Hariç Tutma İlkesi Saymanın Toplam Kuralı ile aynı sonucu verir.
+A∩B = 0 olduğu durumda, Dahil Etme-Hariç Tutma İlkesi, Toplama Yoluyla Sayma Kuralı ile aynı sonucu verir.
 
-Örnek 3
+### Örnek 3
+8 bit genişliğinde bir string ifade ağ üzerinden gönderilmek istenmektedir. Verinin karşı taraftan doğru alınabilmesi için "01" bitleri ile başlamalı veya "10" bitleri ile bitmelidir. Bu şartlara uyan kaç tane string ifade mevcuttur.
 
-Bir ağ üzerinden 8 bitlik bir dize (bir bayt) gönderilir. Alıcı tarafından tanınan geçerli dizi dizisi ya 01 ile başlamalı ya da 10 ile bitmelidir. Böyle kaç tane dizi var?
+Çözüm:
+"10" bitleri ile başlayan 64 tane string ifade vardır. Çünkü 01 ile başladığına göre 8 bit string ifade 6 bite düşmektedir. 2^6 = 64 olasılık mevcut olacaktır. Aynı şekilde 64 tane "10" bitleri ile biten string ifade bulunmaktadır. Dikkat edilirse bu iki küme çakışmaktadır. 
 
-Alıcının kriterlerine uyan potansiyel bit dizileri ya 01 ile başlayan 64 dizi olabilir (çünkü son 6 bit belirtilmemiş, 2^6 = 64 olasılığa izin verilir) ya da 10 ile biten 64 dizi olabilir (ilk 6 bitten beri belirtilmemiş). Elbette bu iki küme örtüşür, çünkü 01 ile başlayan ve 10 ile biten dizeler her iki kümede de vardır. Bu tür 2^4 = 16 dizi vardır (çünkü ortadaki 4 bit isteğe bağlı olabilir). Bu açıklamayı karşılık gelen küme notasyonuna çevirerek, elimizde: |A| = 64, |B| = 64 ve |A∩B| = 16, dolayısıyla Dahil Etme-Dışlama İlkesine göre, belirtilen alıcının kriterleriyle eşleşen 64+64−16 = 112 dize vardır.
+2^4 =16 string ifade çakışma yaratacaktır. Küme notasyonu ile yazmak gerekirse; 
+ |A| = 64, |B| = 64 ve |AnB|= 16 dolayısıyla, içerme dışlama prensibi işletilirse;
+|AuB| =64+64 - 16 =112
 
-Çift Sayma ve Kısıtlamalar
-Bazı öğeleri birden fazla saymanın birçok nedeni vardır ("çifte sayma" olarak da bilinir). Yaygın bir durum, problemde uğraşmanız gereken bir kısıtlama olmasıdır. Fazla sayarsanız, çift sayılan öğelerin sayısını çıkarmanız gerektiğini söylemeye gerek yok. Satırları boyunca bir şey yaptıysanız: her öğeyi birkaç kat sayın, o zaman doğru son yanıtı elde etmek için toplam öğe sayınızı o kata bölebilirsiniz.
 
-3 Kombinatorik
+# 3. Kombinatorik
 
-Sayma problemlerine birinci bölümde açıklanan temel yapı taşlarından yaklaşılabilir. Bununla birlikte, olasılık dünyasında bazı sayma sorunları o kadar yaygındır ki, birkaç üst düzey sayma soyutlaması bilmeye değer. Problemleri çözerken, bu kurallı örneklerden bir analoji bulabilirseniz, ilgili kombinatorik formüllerden oluşturabilirsiniz:
+İlk bölümdeki tanımlanan temel yapı taşları kullanılarak sayma problemlerine çözüm yaklaşımı geliştirilebilir. Bununla birlikte olasılık dünyasında oldukça yaygın olan bazı sayma problemlerini bilmek problemlere çözüm yaklaşımımızı kolaylaştıracaktır. 
 
-Farklı Nesnelerin Permütasyonları
+## Ayrık Nesnelerin Permütasyonları
 
-Permütasyon Kuralı: Bir permütasyon, n farklı nesnenin sıralı bir düzenlemesidir. Bu n nesneye n x (n – 1) x (n – 2) x ... x 2 x 1 = n'de izin verilebilir! yollar.
-Bu, farklı nesnelerin bir alt kümesine izin veriyorsanız veya bazı nesneleriniz belirsizse biraz değişir. Bu davaları kısa süre içinde ele alacağız!
+Permütasyon n farklı nesnenin sıralanmasıdır. Bu n nesne n x (n – 1) x (n – 2) x ... x 2 x 1 = n! şekilde sıralanabilir. 
+
+Ayrık olmayan nesnelerin permütasyonu:
+r tane nesne aynı ise n!/(n1!n2!...nr!)
+
+Sayma yöntemi sıralı sayma
+Üç nesneden iki tanesini seçeyim ve sıralayayım
+
+					       3	 2	= 	6
+I,	II,	II			---	---
+
+
+	     II		1
+I	
+	    III		2
+
+
+  	   I		3
+II
+	   III		4
+
+
+     	 I		5
+III
+	    II		6
+
+10 elemandan 7 tanesinin seçildiği düşünülürse:	 10	  9	  8	   7	 6	 5	 4		3,2,1 eksik
+                                                 --- --- ---	---	---	---	---	
+10!/3!		P(10,7) = 10!/3!
+
+n elemandan r tane seçelim ve sıralayalım; n	 n-1	  n-2		               n-(r-1)
+                                          --- -----	 -----	---  ---  ---	 -------  
+                                           1    2     3                       r
+
+                                          n-r	 n-(r+1)	        3    2    1
+                                          ---  -------	  ---  ---  ---	 ---    
+
+(n-r)*(n-r+1)...2*1= (n-r)!
+
+
+P(n,r)=n!/(n-r)!
+						
 
 Örnek 4
 iPhone'ların 4 haneli şifreleri vardır. Diyelim ki ekranda 4 rakamın üzerinde 4 leke var. Kaç farklı şifre mümkündür?
