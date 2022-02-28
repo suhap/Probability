@@ -3,14 +3,19 @@
 İlkokuldaki öğrendiğimiz sayma kavramını derslerimiz başlamadan tekrar edilecektir. Tabiki tekrar edilecek konular olasılığın temeli olacaktır. Bu bölümde öngörülebilir durumlar için sayma işlemini ve farklı nesneleri nasıl sayılacağını öğrenelicektir. Çatısı makine öğrenmesi gibi bilgisayar bilimleri olan olasılığın temeli ise sayma kavramıdır. 
 
 # Saymanın Temel İlkeleri
+### Toplama kulllanılarak sayma:
+Bir deneyin sonucu, m sonuç kümesinden veya n sonuç kümesinden biri olabilecekse, m sonuç kümesi ve n sonuç kümesi çakışmıyorsa yani m sonuç kümesindeki sonuçlardan herhangi biri n sonuç kümesinden herhangi biri ile aynı değilse bu deneyin olası sonuçları m+n sonuç kümesinden herhangi biridir. 
+Yukarıdaki önermeyi matematiksel notasyon şeklinde yazacak olursak: 
+Saymada toplama kuralı: Bir deneyin sonuç kümeleri A ve B olsun, |A|=m ve |B|=n olsun AnB = ∅  denyin muhtemel sonuç sayısı |A|+|B|=m+n olur. 
+
 
 ### Çarpma kullanılarak sayma:
 İki olaydan birincisi n farklı şekilde, ikincisi birinci olaya bağlı olarak m farklı şekilde yapılıyor ise bu işlemler aynı anda "birinci ve ikinci" n.m şekilde yapılır. 
 
 Küme notasyonu kullanılarak;  iki bölümden oluşan bir deneyin ilk bölümünün sonuçları A kümesinden oluşsun, burada |A| = m ve ikinci bölümünün sonuçları B kümesinden oluşsun (ilk bölümün sonucundan bağımsız olarak), burada |B| = n ise, deneyin toplam çıktı sayısı |A||B| = mn
 
-# örnek 1
-İki zar atma olayının kaç sonucu vardır. 
+### örnek 1
+Atılan hilesiz iki zarın olası kaç sonucu vardır? 
 
 !! Burada atılan zarlardaki sayıların toplam değerleri yerine atışların tüm açık sonuçları ile ilgilenilmektedir.
 Bu atışlar iki parça olarak düşünülebilir: ilk kısımda birinci zar atılmaktadır, ikinci kısımda ise ikinci zar atılmaktadır. İlk kısımın 6 olası değeri ve ikinci kısmın da benzer şekilde  6 olası değere sahip olabileceğinden (ilk kısımda ne geldiğinden bağımsız olarak), toplam potansiyel sonuç sayısı 36'dır (= 6 × 6). Bu olası sonuçlar, bir çift zar üzerinde atılan değerleri gösteren bir dizi olarak aşağıda açıkça listelenmiştir:
@@ -21,18 +26,21 @@ Bu atışlar iki parça olarak düşünülebilir: ilk kısımda birinci zar atı
 (5, 1) (5, 2) (5, 3) (5, 4) (5, 5) (5, 6)
 (6, 1) (6, 2) (6, 3) (6, 4) (6, 5) (6, 6)
 
-Örnek 2
+### Örnek 2
+100 elemanlı bir hash tablosu olsun. İki string birbirlerinden bağımsız olarak hashing işlemine tabi tutularak tabloya yerleştirilmektedir. String ifadelerin tabloda saklanması için kaç olası yol vardır?
+Birinci string ifade hash işlemine tabi tutulduktan sonra tablodaki 100 olası adrese yerleştirilbilir. İkinci string ifade de hash işlemine tabi tutulduktan sonra diğer işlemden bağımsız olarak 100 adresten birine yerleştirilebilir. Dolayısıyla iki string ifadenin tabloda saklanmasının 100 * 100 = 10.000 yolu vardır. 
 
-100 kovalı bir hash tablosu düşünün. İki isteğe bağlı dize bağımsız olarak özetlenir ve tabloya eklenir. Dizelerin tabloda saklanması için kaç olası yol vardır?
+### Örnek 3
+Pelin; bir kafeteryaya ait, yalnızca sıcak içecekler kısmıyırtılmış olan aşağıdaki menüyü evinde buluyor.
+### Menü
+### Yiyecekler
+Gözleme: Kıymalı, ıspanaklı, patlıcanlı
+Poğaça: Peynirli, Patatesli
+### İçecekler
+Soğuk içecekler: Kıymalı, ıspanaklı, patlıcanlı
+Poğaça: Peynirli, Patatesli
 
-Her dize 100 kovadan birine hash edilebilir. Birinci dizgenin hash sonuçları ikincinin hash değerini etkilemediğinden, iki dizgenin hash tablosunda saklanmasının 100 * 100 = 10.000 yolu vardır.
-
-VEYA ile sayma
-
-Saymanın Toplam Kuralı:
-Bir deneyin sonucu m sonuçtan biri veya n sonuçtan biri olabilirse, m sonuç kümesindeki sonuçların hiçbiri n sonuç kümesindeki sonuçlardan herhangi biri ile aynı değilse, o zaman m  + n deneyin olası sonuçları.
-
-Küme notasyonu kullanılarak yeniden yazılan Toplam Kuralı, bir deneyin sonuçlarının A kümesinden veya B kümesinden alınabileceğini belirtir; burada |A| = m ve |B| = n ve A∩B = 0 ise, deneyin sonuçlarının sayısı |A|+|B| = m+n.
+Pelin bu kafeteryayı arayıp ''bir çeşit gözleme ve birçeşit soğuk içecek'' veya ''bir çeşit poğaça ve bir çeşitsıcak içecek'' siparişi vermek istiyor. Kafeterya çalışanıbu siparişi 22 farklı şekilde verebileceğini söylüyor.Buna göre, bu kafeteryada kaç farklı sıcak içecek çeşidi vardır?
 
 
 Dahil Etme Hariç Tutma İlkesi
