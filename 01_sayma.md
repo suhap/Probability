@@ -31,11 +31,11 @@ Bu atışlar iki parça olarak düşünülebilir: ilk kısımda birinci zar atı
 Birinci string ifade hash işlemine tabi tutulduktan sonra tablodaki 100 olası adrese yerleştirilbilir. İkinci string ifade de hash işlemine tabi tutulduktan sonra diğer işlemden bağımsız olarak 100 adresten birine yerleştirilebilir. Dolayısıyla iki string ifadenin tabloda saklanmasının 100 * 100 = 10.000 yolu vardır. 
 
 ### Örnek 3
-Pelin; bir kafeteryaya ait, yalnızca sıcak içecekler kısmıyırtılmış olan aşağıdaki menüyü evinde buluyor.
+Pelin; bir kafeteryaya ait, yalnızca sıcak içecekler kısmı yırtılmış olan aşağıdaki menüyü evinde buluyor.
 
 ![menu](https://raw.githubusercontent.com/suhap/Probability/master/resource/menu.png)
 
-Pelin bu kafeteryayı arayıp ''bir çeşit gözleme ve birçeşit soğuk içecek'' veya ''bir çeşit poğaça ve bir çeşitsıcak içecek'' siparişi vermek istiyor. Kafeterya çalışanıbu siparişi 22 farklı şekilde verebileceğini söylüyor.Buna göre, bu kafeteryada kaç farklı sıcak içecek çeşidi vardır?
+Pelin bu kafeteryayı arayıp ''bir çeşit gözleme ve bir çeşit soğuk içecek'' veya ''bir çeşit poğaça ve bir çeşit sıcak içecek'' siparişi vermek istiyor. Kafeterya çalışanı bu siparişi 22 farklı şekilde verebileceğini söylüyor. Buna göre, bu kafeteryada kaç farklı sıcak içecek çeşidi vardır?
 
 Çözüm: 
 
