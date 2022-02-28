@@ -136,21 +136,16 @@ Ekranda 2 hanenin üzerinde 2 leke varsa ne olur? İki olasılık vardır: Her b
 
 Örnek 5
 
-Ağaçtaki her n düğümü için aşağıdaki üç özelliği karşılayan bir ikili ağaç olan ikili arama ağacının (BST) tanımını hatırlayın:
+ BST ağacı her n düğümü için aşağıdaki üç özelliği karşılamaktadır:
 1. n'nin değeri, sol alt ağacındaki tüm değerlerden büyüktür.
-
 2. n'nin değeri, sağ alt ağacındaki tüm değerlerden küçüktür.
-
 3. n'nin hem sol hem de sağ alt ağaçları ikili arama ağaçlarıdır.
 
-1, 2 ve 3 değerlerini içeren ve dejenere bir yapıya sahip (yani, BST'deki her düğümün en fazla bir çocuğu vardır) kaç olası ikili arama ağacı vardır?
+Permütasyon formülünden 1,2,3 değerleri için 3!=6 tane ağaç mimarisi oluşturulabilmektedir. Yukarıdaki kurallar dikkate alınarak 1,2,3 değerleri yerleştirilen BST ağaçları aşağıda gösterilmektedirler. 
 
-BST'deki (1, 2 ve 3) üç değerin 3!'ten herhangi birine yerleştirilmiş olabileceği gerçeğini göz önünde bulundurarak başlıyoruz (=6) sıralamalar (permütasyonlar). 3!'ün her biri için BST'ye eklenirken değerlerin sıralanabileceği şekillerde, ortaya çıkan yapının ne olacağını ve hangilerinin dejenere olduğunu belirleyebiliriz. Aşağıda, üç değerin olası her sıralamasını ve elde edilen BST yapısını ele alıyoruz.
-
-BST Şekili
+![BST](https://raw.githubusercontent.com/suhap/Probability/master/resource/BST.png)
 
 
-Burada 4 dejenere BST olduğunu görüyoruz (ilk ikisi ve son ikisi).
 
 Belirsiz Nesnelerin Permütasyonları
 
