@@ -1,21 +1,19 @@
-1. Sayma
+# 1. Sayma
 
-Üç yaşında sayma kavramını oldukça iyi kavradığınızı düşünmüş olsanız da, gerçekten saymayı öğrenmek için şimdiye kadar beklemeniz gerektiği ortaya çıktı. Şimdi bu dersi aldığına sevinmedin mi?! Ama cidden, aşağıda saymayla ilgili gelecekte yararlı bulabileceğiniz bazı özellikleri sunuyoruz.
+İlkokuldaki öğrendiğimiz sayma kavramını derslerimiz başlamadan tekrar edilecektir. Tabiki tekrar edilecek konular olasılığın temeli olacaktır. Bu bölümde öngörülebilir durumlar için sayma işlemini ve farklı nesneleri nasıl sayılacağını öğrenelicektir. Çatısı makine öğrenmesi gibi bilgisayar bilimleri olan olasılığın temeli ise sayma kavramıdır. 
 
-Bu bölümde sunulan fikirler olasılığın özüdür. Sayma, bir evin temeli gibidir (ev, makine öğrenimi gibi bilgisayar bilimcileri için muhtemelen daha sonra yapacağımız tüm harika şeylerdir). Evler harika. Öte yandan, temeller hemen hemen bir delikte betondur. Ama temeli olmayan bir ev yapmayın. Bu konuda bana güven. Bu bölüm, birçok öngörülebilir durum için nasıl sayılacağını ele alırken, farklı nesnelerin nasıl sayılacağını öğrenmeye özel önem veriyoruz. Bu, olasılığa geçiş yaptığımızda faydalı olacaktır.
+# Saymanın Temel İlkeleri
 
-2 Temel Yapı Taşları
-ADIMLARLA Sayma
+### Çarpma kullanılarak sayma:
+İki olaydan birincisi n farklı şekilde, ikincisi birinci olaya bağlı olarak m farklı şekilde yapılıyor ise bu işlemler aynı anda "birinci ve ikinci" n.m şekilde yapılır. 
 
-Çarpma Sayma Kuralı:
-Bir deneyin iki bölümü varsa, birinci bölümün m sonuçtan biriyle sonuçlanabileceği ve ikinci bölümün, birinci bölümün sonucuna bakılmaksızın n sonuçtan biriyle sonuçlanabileceği durumda, deneyin toplam sonuç sayısı mn'dir.
+Küme notasyonu kullanılarak;  iki bölümden oluşan bir deneyin ilk bölümünün sonuçları A kümesinden oluşsun, burada |A| = m ve ikinci bölümünün sonuçları B kümesinden oluşsun (ilk bölümün sonucundan bağımsız olarak), burada |B| = n ise, deneyin toplam çıktı sayısı |A||B| = mn
 
-Küme notasyonu kullanılarak yeniden yazılan Ürün Kuralı, iki bölümden oluşan bir deneyin ilk bölümdeki A kümesinden bir sonucu varsa, burada |A| = m ve ikinci bölümdeki B kümesinden bir sonuç (ilk bölümün sonucundan bağımsız olarak), burada |B| = n ise, deneyin toplam çıktı sayısı |A||B| = mn
+# örnek 1
+İki zar atma olayının kaç sonucu vardır. 
 
-örnek 1
-Yüzleri 1'den 6'ya kadar olan 6 taraflı iki zar atılıyor. Deneyin kaç olası sonucu vardır?
-
-İki zarın toplam değeriyle değil, atışların tüm açık sonuçlarıyla ilgilendiğimizi unutmayın. İki zarı atmanın genel "deneyini" iki parçalı olarak düşünün: ilk kısımda ilk kalıbı atıyoruz, ikinci kısımda ikinci kalıbı atıyoruz. İlk kalıp 6 olası değer ve ikinci kalıp benzer şekilde 6 olası değere sahip olabileceğinden (ilk kalıpta ne göründüğünden bağımsız olarak), toplam potansiyel sonuç sayısı 36'dır (= 6 × 6). Bu olası sonuçlar, bir çift zar üzerinde atılan değerleri gösteren bir dizi çift olarak aşağıda açıkça listelenmiştir:
+!! Burada atılan zarlardaki sayıların toplam değerleri yerine atışların tüm açık sonuçları ile ilgilenilmektedir.
+Bu atışlar iki parça olarak düşünülebilir: ilk kısımda birinci zar atılmaktadır, ikinci kısımda ise ikinci zar atılmaktadır. İlk kısımın 6 olası değeri ve ikinci kısmın da benzer şekilde  6 olası değere sahip olabileceğinden (ilk kısımda ne geldiğinden bağımsız olarak), toplam potansiyel sonuç sayısı 36'dır (= 6 × 6). Bu olası sonuçlar, bir çift zar üzerinde atılan değerleri gösteren bir dizi olarak aşağıda açıkça listelenmiştir:
 (1, 1) (1, 2) (1, 3) (1, 4) (1, 5) (1, 6)
 (2, 1) (2, 2) (2, 3) (2, 4) (2, 5) (2, 6)
 (3, 1) (3, 2) (3, 3) (3, 4) (3, 5) (3, 6)
