@@ -40,6 +40,9 @@ Poğaça: Peynirli, Patatesli
 Soğuk içecekler: Kıymalı, ıspanaklı, patlıcanlı
 Poğaça: Peynirli, Patatesli
 
+![soyutlamaTablosu](https://raw.githubusercontent.com/suhap/Probability/master/resource/menu.png)
+
+
 Pelin bu kafeteryayı arayıp ''bir çeşit gözleme ve birçeşit soğuk içecek'' veya ''bir çeşit poğaça ve bir çeşitsıcak içecek'' siparişi vermek istiyor. Kafeterya çalışanıbu siparişi 22 farklı şekilde verebileceğini söylüyor.Buna göre, bu kafeteryada kaç farklı sıcak içecek çeşidi vardır?
 
 
