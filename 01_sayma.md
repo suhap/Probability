@@ -78,22 +78,7 @@ Sayma yöntemi sıralı sayma
 Üç nesneden iki tanesini seçeyim ve sıralayayım
 
 					3	 2	= 	6
-I,	II,	II				
 
-
-	     II		1
-I	
-	    III		2
-
-
-  	   I		3
-II
-	   III		4
-
-
-     	 I		5
-III
-	    II		6
 
 10 elemandan 7 tanesinin seçildiği düşünülürse:	 10	  9	  8	   7	 6	 5	 4		3,2,1 eksik
                                                  --- --- ---	---	---	---	---	
