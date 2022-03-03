@@ -77,7 +77,7 @@ r tane nesne aynı ise n!/(n1!n2!...nr!)
 Sayma yöntemi sıralı sayma
 Üç nesneden iki tanesini seçeyim ve sıralayayım
 
-					       3	 2	= 	6
+					3	 2	= 	6
 I,	II,	II			---	---
 
 
