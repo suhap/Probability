@@ -78,7 +78,7 @@ Sayma yöntemi sıralı sayma
 Üç nesneden iki tanesini seçeyim ve sıralayayım
 
 					3	 2	= 	6
-I,	II,	II			---	---
+I,	II,	II				
 
 
 	     II		1
