@@ -154,12 +154,12 @@ Belirsiz Nesnelerin Permütasyonu: Genellikle n nesne olduğunda ve
 n1 aynıdır (ayırt edilemez) ve
 n2 aynıdır ve
 ...
-nr aynıdır, o zaman n vardır! /(n1!n2!...nr!) permütasyonları
+nr aynıdır, o zaman n! /(n1!n2!...nr!) 
 
 Örnek 6
 Üç 0 ve iki 1'den kaç farklı bit dizisi oluşturulabilir?
 
-5 toplam rakam 5 verir! permütasyonlar. Ancak bu, 0'ların ve 1'lerin ayırt edilebilir olduğunu varsayar (bunu açıklığa kavuşturmak için her birine bir alt simge verelim). İşte permütasyonların bir alt kümesi.
+5 toplam rakam 5! değerini verir. Ancak bu, 0'ların ve 1'lerin ayırt edilebilir olduğunu varsayarsak (her birine bir alt simge verelim). İşte permütasyonların bir alt kümesi.
 
 01 11 12 02 03
 01 11 12 03 02
@@ -168,32 +168,31 @@ nr aynıdır, o zaman n vardır! /(n1!n2!...nr!) permütasyonları
 03 11 12 01 02
 03 11 12 02 01
 
-Aynı rakamlar ayırt edilemezse, listelenen tüm permütasyonlar aynıdır. Herhangi bir permütasyon için 3 tane var! 0'ları ve 2'yi yeniden düzenlemenin yolları! 1'leri yeniden düzenlemenin yolları (ayırt edilemez dizilerle sonuçlanır). Fazla saymışız. Belirsiz nesnelerin permütasyonları için formülü kullanarak, fazla saymayı düzeltebiliriz:
+Aynı rakamlar ayırt edilemezse, listelenen tüm permütasyonlar aynıdır. Fazla saymışız. Belirsiz nesnelerin permütasyonları için formülü kullanarak, fazla saymayı düzeltebiliriz:
 
 Toplam = 5!/(3!·2!) = 160/( 6·2) =120/12 = 10.
 
 Farklı Nesnelerin Kombinasyonları
 
-Kombinasyonlar: Bir kombinasyon, bir dizi n nesneden sırasız bir r nesne seçimidir. Tüm nesneler farklıysa, seçim yapmanın yollarının sayısı:
-n! /(r!(n−r)!) =(n
-                          r) yollar
+Kombinasyonlar: Bir kombinasyon, bir dizi n nesneden sırasız bir r nesne seçimidir. Tüm nesneler farklıysa, seçim yapma yollarının sayısı:
+n! /(r!(n−r)!) =(n  
+                 r) yol vardır.
 
-Bu genellikle "n r'yi seç" olarak ifade edilir.
+Bu genellikle "n taneden r taneyi seç" olarak ifade edilir.
 
 Ürün kombinasyonları için şu genel yolu düşünün: Bir dizi n farklı nesneden r farklı, sırasız nesne seçmek için, ör. "7 3'ü seç",
 
-1. İlk önce tüm n nesnenin permütasyonlarını düşünün. n var! bunu yapmanın yolları.
+1. İlk önce tüm n nesnenin permütasyonlarını düşünün. n!  yol var.
 
 2. Ardından permütasyondaki ilk r'yi seçin. Bunu yapmanın bir yolu var.
 
-3. r seçilen nesnelerin sırasının alakasız olduğuna dikkat edin. r var! onları değiştirmenin yolları. Seçim değişmeden kalır.
+3. r seçilen nesnelerin sırasının alakasız olduğuna dikkat edin. r! yol var. Seçim değişmeden kalır.
 
-4. (n-r) seçilmemiş nesnelerin sırasının alakasız olduğuna dikkat edin. (n-r) var! onları değiştirmenin yolları. Seçim değişmeden kalır.
+4. (n-r) seçilmemiş nesnelerin sırasının alakasız olduğuna dikkat edin. (n-r)! yol var. Seçim değişmeden kalır.
 
-toplam = n! /(r!(n−r))! = (n
-                                       r) =
-                                      (n
-                                        n-r)
+toplam = n! /(r!(n−r))! = (n	= (n
+
+                           r)   = n-r)
 
 7 farklı nesneden 3 nesneyi seçmenin toplam yolları:
 
@@ -231,9 +230,8 @@ Durum 3: Ne 8. ne de 8. baskı olmayan kitaplardan 3'ü seçin:
 
 Eski dostumuz Toplama Kuralını kullanarak, durumları ekleyebiliriz:
 
-Toplam = 2 · (4
-2) + (4
-         3)= 16.
+Toplam = 2 · (4  + (4
+              2) + 3) 16.
 
 Alternatif olarak, 4'ten 3 kitap seçmenin tüm yollarını hesaplayabilir ve ardından “yasak” olanları (yani kısıtlamayı kıran seçimleri) çıkarabilirdik. Chris Piech buna Yasak Şehir yöntemi diyor.
 
