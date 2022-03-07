@@ -1,6 +1,6 @@
 # 1. Sayma
 
-İlkokuldaki öğrendiğimiz sayma kavramını derslerimiz başlamadan tekrar edilecektir. Tabiki tekrar edilecek konular olasılığın temeli olacaktır. Bu bölümde öngörülebilir durumlar için sayma işlemini ve farklı nesneleri nasıl sayılacağını öğrenelicektir. Çatısı makine öğrenmesi gibi bilgisayar bilimleri olan olasılığın temeli ise sayma kavramıdır. 
+İlkokuldaki öğrendiğimiz sayma kavramın bu derste tekrar edilecektir. Tabiki tekrar edilecek konular olasılığın temeli olacaktır. Bu derste öngörülebilir durumlar için sayma işlemi ve farklı nesneleri nasıl sayılacağı öğrenilecektir. Çatısı bilgisayar bilimleri(yapay zeka, makina öğrenmesi) olan olasılığın temeli ise sayma kavramıdır. 
 
 # 2. Saymanın Temel İlkeleri
 ### Toplama kulllanılarak sayma:
