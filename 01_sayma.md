@@ -1,6 +1,6 @@
 # 1. Sayma
 
-İlkokuldaki öğrendiğimiz sayma kavramın bu derste tekrar edilecektir. Tabiki tekrar edilecek konular olasılığın temeli olacaktır. Bu derste öngörülebilir durumlar için sayma işlemi ve farklı nesneleri nasıl sayılacağı öğrenilecektir. Çatısı bilgisayar bilimleri(yapay zeka, makina öğrenmesi) olan olasılığın temeli ise sayma kavramıdır. 
+İlkokuldaki öğrendiğimiz sayma kavramın bu derste tekrar edilecektir. Tabiki tekrar edilecek konular olasılığın temeli olacaktır. Ayrıca ders kapsamında öngörülebilir durumlar için sayma işlemi ve farklı nesnelerin nasıl sayılacağı öğrenilecektir. Çatısı bilgisayar bilimleri(yapay zeka, makina öğrenmesi) olan olasılığın temeli ise sayma kavramıdır. 
 
 # 2. Saymanın Temel İlkeleri
 ### Toplama kulllanılarak sayma:
@@ -12,13 +12,13 @@ Saymada toplama kuralı: Bir deneyin sonuç kümeleri A ve B olsun, |A|=m ve |B|
 ### Çarpma kullanılarak sayma:
 İki olaydan birincisi n farklı şekilde, ikincisi birinci olaya bağlı olarak m farklı şekilde yapılıyor ise bu işlemler aynı anda "birinci ve ikinci" n.m şekilde yapılır. 
 
-Küme notasyonu kullanılarak;  iki bölümden oluşan bir deneyin ilk bölümünün sonuçları A kümesinden oluşsun, burada |A| = m ve ikinci bölümünün sonuçları B kümesinden oluşsun (ilk bölümün sonucundan bağımsız olarak), burada |B| = n ise, deneyin toplam çıktı sayısı |A||B| = mn
+Küme notasyonu kullanılarak;  iki bölümden oluşan bir deneyin ilk bölümünün sonuçları A kümesinden oluşsun, burada |A| = m ve ikinci bölümünün sonuçları B kümesinden oluşsun , burada |B| = n ise, deneyin toplam çıktı sayısı |A||B| = mn
 
 ### örnek 1
 Atılan hilesiz iki zarın olası kaç sonucu vardır? 
 
-!! Burada atılan zarlardaki sayıların toplam değerleri yerine atışların tüm açık sonuçları ile ilgilenilmektedir.
-Bu atışlar iki parça olarak düşünülebilir: ilk kısımda birinci zar atılmaktadır, ikinci kısımda ise ikinci zar atılmaktadır. İlk kısımın 6 olası değeri ve ikinci kısmın da benzer şekilde  6 olası değere sahip olabileceğinden (ilk kısımda ne geldiğinden bağımsız olarak), toplam potansiyel sonuç sayısı 36'dır (= 6 × 6). Bu olası sonuçlar, bir çift zar üzerinde atılan değerleri gösteren bir dizi olarak aşağıda açıkça listelenmiştir:
+!! Atılan zarlardaki sayıların toplam değerleri yerine atışların tüm açık sonuçları ile ilgilenilmektedir.
+Bu atışlar iki parça olarak düşünülebilir: ilk kısımda birinci zar atılmaktadır, ikinci kısımda ise ikinci zar atılmaktadır. İlk kısımın 6 olası değeri ve ikinci kısmın da benzer şekilde  6 olası değere sahip olabileceğinden (ilk kısımda ne geldiğinden bağımsız olarak), toplam potansiyel sonuç sayısı 36'dır (= 6 × 6). Bu olası sonuçlar bir dizi olarak aşağıda açıkça listelenmiştir:
 (1, 1) (1, 2) (1, 3) (1, 4) (1, 5) (1, 6)
 (2, 1) (2, 2) (2, 3) (2, 4) (2, 5) (2, 6)
 (3, 1) (3, 2) (3, 3) (3, 4) (3, 5) (3, 6)
@@ -27,7 +27,7 @@ Bu atışlar iki parça olarak düşünülebilir: ilk kısımda birinci zar atı
 (6, 1) (6, 2) (6, 3) (6, 4) (6, 5) (6, 6)
 
 ### Örnek 2
-100 elemanlı bir hash tablosu olsun. İki string birbirlerinden bağımsız olarak hashing işlemine tabi tutularak tabloya yerleştirilmektedir. String ifadelerin tabloda saklanması için kaç olası yol vardır?
+İki string birbirlerinden bağımsız olarak hashing işlemine tabi tutularak 100 elemanlı bir hash tablosuna yerleştirilmek isteniyor. String ifadelerin tabloda saklanmasının kaç olası yol vardır?
 Birinci string ifade hash işlemine tabi tutulduktan sonra tablodaki 100 olası adrese yerleştirilbilir. İkinci string ifade de hash işlemine tabi tutulduktan sonra diğer işlemden bağımsız olarak 100 adresten birine yerleştirilebilir. Dolayısıyla iki string ifadenin tabloda saklanmasının 100 * 100 = 10.000 yolu vardır. 
 
 ### Örnek 3
@@ -95,15 +95,15 @@ II
 III
 	    II		6
 
-10 elemandan 7 tanesinin seçildiği düşünülürse:	 10	  9	  8	   7	 6	 5	 4		3,2,1 eksik
-                                                 --- --- ---	---	---	---	---	
+10 elemandan 7 tanesinin seçildiği düşünülürse:	 10	  9	  8	 7	 6	 5	 4		3,2,1 eksik
+                                                 ---     ---     ---	---	---	---	---	
 10!/3!		P(10,7) = 10!/3!
 
-n elemandan r tane seçelim ve sıralayalım; n	 n-1	  n-2		               n-(r-1)
-                                          --- -----	 -----	---  ---  ---	 -------  
-                                           1    2     3                       r
+n elemandan r tane seçelim ve sıralayalım; n   n-1   n-2	         n-(r-1)
+                                          --- ----  ---- ---  ---  ---	 -------  
+                                           1    2    3                      r
 
-                                          n-r	 n-(r+1)	        3    2    1
+                                          n-r  n-(r+1)	        3    2    1
                                           ---  -------	  ---  ---  ---	 ---    
 
 (n-r)*(n-r+1)...2*1= (n-r)!
@@ -112,31 +112,37 @@ n elemandan r tane seçelim ve sıralayalım; n	 n-1	  n-2		               n-(r-
 P(n,r)=n!/(n-r)!
 						
 
-Örnek 4
-iPhone'ların 4 haneli şifreleri vardır. Diyelim ki ekranda 4 rakamın üzerinde 4 leke var. Kaç farklı şifre mümkündür?
+### Örnek 4
+4 haneli ekran şifresine sahip bir telefon ekrandaki rakamların üzerinde 4 tane leke(parmak izi) vardır. Kaç farklı şifre mümkündür?
 
-Koddaki rakamların sırası önemli olduğu için permütasyon kullanmalıyız. Ve tam olarak dört leke olduğundan, her bir sayının farklı olduğunu biliyoruz. Böylece permütasyon formülünü ekleyebiliriz: 4! = 24.
+Şifredeki rakamların sırası önemli olduğu için permütasyon kullanmalıyız. Dört leke olduğundan, her bir sayının farklı olduğunu bilinmektedir. Buj durumda permütasyon formülünü: 4! = 24.
 
-Ekranda 3 rakamın üzerinde 3 leke varsa ne olur? 3 rakamdan biri tekrar ediyor ama hangisi olduğunu bilmiyoruz. Bunu, tekrarlanabilecek her basamak için bir tane olmak üzere (her biri aynı sayıda permütasyona sahip) üç durum yaparak çözebiliriz. A, B, C, C'nin iki kez tekrarlandığı 3 basamağı temsil etsin. Başlangıçta iki C'nin farklı olduğunu varsayabiliriz. O zaman her vakada 4 tane olacak! permütasyonlar:
+Ekranda 3 rakamın üzerinde 3 leke olması durumunda kaç farklı şifre üretilebilir? 
+
+3 rakamdan biri tekrar ediyor ama hangisi olduğu bilinmemektedir. Bu durum, tekrarlaması mümkün olan her basamak için bir tane olmak üzere (her biri aynı sayıda permütasyona sahip) üç şekilde çözülebilir. A, B bir kez C, C'nin iki kez kullanılsın. Tekrar eden C'nin farklı C'ler olduğunu varsayıldığı durumda bir önceki çözüme ulaşılır: 4! =24
 
 A B C1 C2
 
-Bununla birlikte, aynı rakamların (bir A, bir B ve iki C) permütasyonlarının çift sayımını ortadan kaldırmamız gerekir:
+Ayncak C aynı rakam olduğu için bazı durumlarda çift sayılmıştır. C'nin çift sayıldığı durumları testbit etmek için C' farklı düşündüğümüz durumlardaki C lerin kendi arasındaki permütasyonları buluruz: 2! = 4 
+Bulduğumuz fazla sayımları gelen durumdan çıkarmamız gerekmekteddir. Fazla sayımlar genel durumu çarpım şeklinde etkilediği için bölme şeklinde çıkarabiliriz.  
 
 4! /( 2!· 1!· 1!)
 
-Farklı tekrarlanan rakamlar için üç durumu toplamak, şunu verir:
+Yukarıdaki işlem sadece C rakamı için hesaplanmıştır. Ancak bu durum üç farklı rakam içinde aynı şekilde tekrar etmektedir. Dolayısıyla bulunan sonuç 3 ile çarpılarak olası şifrelerin sayısı bulunabilir. 
+
 3 · 4!/(2!· 1!· 1!) = 3 · 12 = 36
 
-Ekranda 2 hanenin üzerinde 2 leke varsa ne olur? İki olasılık vardır: Her biri iki kez kullanılan 2 hane veya 3 kez kullanılan 1 hane ve bir kez kullanılan diğer hane.
+Ekranda 2 rakamın üzerinde 2 leke olması durumunda kaç farklı şifre üretilebilir? 
+
+Her biri iki kez kullanılan 2 hane veya 3 kez kullanılan 1 hane ve bir kez kullanılan diğer hane.
 
 4!/(2!· 2!)+2 ·4!/(3!· 1!) = 6+ (2 · 4) = 6+8 = 14
 
 
 
-Örnek 5
+### Örnek 5
 
- BST ağacı her n düğümü için aşağıdaki üç özelliği karşılamaktadır:
+BST ağacı her n düğümü için aşağıdaki üç özelliği karşılamaktadır:
 1. n'nin değeri, sol alt ağacındaki tüm değerlerden büyüktür.
 2. n'nin değeri, sağ alt ağacındaki tüm değerlerden küçüktür.
 3. n'nin hem sol hem de sağ alt ağaçları ikili arama ağaçlarıdır.
@@ -147,19 +153,19 @@ Permütasyon formülünden 1,2,3 değerleri için 3!=6 tane ağaç mimarisi olu�
 
 
 
-Belirsiz Nesnelerin Permütasyonları
+## Tekrarlı Permütasyon
 
-Belirsiz Nesnelerin Permütasyonu: Genellikle n nesne olduğunda ve
+Ayrık Olmayan Nesnelerin Permütasyonu: Genellikle n nesne olduğunda ve
 
-n1 aynıdır (ayırt edilemez) ve
-n2 aynıdır ve
+n1 aynı (ayırt edilemez) ve
+n2 aynı ve
 ...
-nr aynıdır, o zaman n! /(n1!n2!...nr!) 
+nr aynı ise permütasyon n! /(n1!n2!...nr!) şekilde hesaplanır. 
 
-Örnek 6
-Üç 0 ve iki 1'den kaç farklı bit dizisi oluşturulabilir?
+### Örnek 6 
+Üç tane 0 ve iki tane 1'den kaç farklı bit dizisi oluşturulabilir?
 
-5 toplam rakam 5! değerini verir. Ancak bu, 0'ların ve 1'lerin ayırt edilebilir olduğunu varsayarsak (her birine bir alt simge verelim). İşte permütasyonların bir alt kümesi.
+5 toplam rakam 5! değerini verir. Ancak bu durum , 0'ların ve 1'lerin farklı rakamlar olduğunu varsayılmıştır:
 
 01 11 12 02 03
 01 11 12 03 02
@@ -168,45 +174,44 @@ nr aynıdır, o zaman n! /(n1!n2!...nr!)
 03 11 12 01 02
 03 11 12 02 01
 
-Aynı rakamlar ayırt edilemezse, listelenen tüm permütasyonlar aynıdır. Fazla saymışız. Belirsiz nesnelerin permütasyonları için formülü kullanarak, fazla saymayı düzeltebiliriz:
+Eğer rakamların bazıları aynı ise bu durumda bazı sıralamalar birbirinin aynı olacaktır. Dolayısıyla aynı olan sıralamalar fazladan sayılmış olacaktır. Bu durumdan kurtulmak için sıralama içinde tekrar eden nesnelerin sayısının bulunup düzeltilmesi gerekmektedir. 
 
 Toplam = 5!/(3!·2!) = 160/( 6·2) =120/12 = 10.
 
-Farklı Nesnelerin Kombinasyonları
+## Farklı Nesnelerin Kombinasyonları
 
 Kombinasyonlar: Bir kombinasyon, bir dizi n nesneden sırasız bir r nesne seçimidir. Tüm nesneler farklıysa, seçim yapma yollarının sayısı:
 n! /(r!(n−r)!) =(n  
                  r) yol vardır.
 
-Bu genellikle "n taneden r taneyi seç" olarak ifade edilir.
+Bu durum kısaca "n taneden r taneyi seçimi" olarak ifade edilir.
 
-Ürün kombinasyonları için şu genel yolu düşünün: Bir dizi n farklı nesneden r farklı, sırasız nesne seçmek için, ör. "7 3'ü seç",
+Permütasyon kullanarak kombinasyon işleminin yapılması: Bir dizi n farklı nesneden, sırasız olarak r farklı nesne seçmek istensin, 7 taneden 3 tanesi seçilsin;
 
-1. İlk önce tüm n nesnenin permütasyonlarını düşünün. n!  yol var.
-
-2. Ardından permütasyondaki ilk r'yi seçin. Bunu yapmanın bir yolu var.
-
-3. r seçilen nesnelerin sırasının alakasız olduğuna dikkat edin. r! yol var. Seçim değişmeden kalır.
+1. Ölçelikle n tane nesnenin permütasyonu:  n! 
+2. Bu nesneler içinden ilk r tanesi tek bir yolla seçilir.
+3. Seçilen r tane nesnenin sırasızdır. Seçilen bu r nesnenin permütasyonu: r!
+4. Seçilmeyen (n-r) tane nesnenin permütasyonu: (n-r)!
 
 4. (n-r) seçilmemiş nesnelerin sırasının alakasız olduğuna dikkat edin. (n-r)! yol var. Seçim değişmeden kalır.
 
-toplam = n! /(r!(n−r))! = (n	= (n
+toplam = n! /(r!(n−r)!) = (n	= (n
 
                            r)   = n-r)
 
 7 farklı nesneden 3 nesneyi seçmenin toplam yolları:
 
 toplam = (7
-              3) = 7!/(3!(7−3))! = 35
+              3) = 7!/(3!(7−3)!) = 35
 
-Örnek 7
+### Örnek 7
 
 Açlık Oyunları'nda, nüfusu 8.000 olan 12. bölgeden 2 köylü seçmenin kaç yolu vardır?
 
 Bu basit bir kombinasyon problemidir. (8000
 2) = 31.996.000.
 
-Örnek 8
+### Örnek 8
 6 kitaptan 3 kitap seçmenin kaç yolu vardır?
 
 Kitapların her biri farklıysa, bu başka bir basit kombinasyon problemidir.
