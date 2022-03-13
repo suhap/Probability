@@ -214,41 +214,38 @@ Bu basit bir kombinasyon problemidir. (8000
 ### Örnek 8
 6 kitaptan 3 kitap seçmenin kaç yolu vardır?
 
-Kitapların her biri farklıysa, bu başka bir basit kombinasyon problemidir.
+Kitapların her biri farklıysa, temel kombinasyon formülü :
 
-Var
 6! /3!3!=20 yol.
 
-İkisi birlikte seçilmemesi gereken iki kitap varsa (örneğin, Ross ders kitabının hem 8. hem de 9. baskısını seçmeyin) 3 kitap seçmenin kaç yolu vardır? Bu sorunu vakalara bölersek çözmek daha kolay olur. Aşağıdaki üç farklı durumu göz önünde bulundurun:
+Birlikte seçilmemesi gereken iki kitap varsa (örneğin, Ross ders kitabının hem 8. hem de 9. baskısını seçilemez) 3 kitap seçmenin kaç yolu vardır? Bu problemin çözümü için aşağıdaki üç farklı durumu göz önünde bulundurulması gereklidir:
 
-Durum 1: 8. Baskıyı seçin. ve 9'uncu Basım olmayan diğer 2 kişi: Var
+Durum 1: 8. Baskı hali hazırda seçildiğinde 9. Baskı seçilemez. Dolayısıyla : 
+(4
+2) 
+
+Durum 2: 9. Baskı hali hazırda seçildiğinde 8. Baskı seçilemez. Dolayısıyla :
 (4
 2) bunu yapmanın yolları.
 
-Durum 2: 9. Baskıyı seçin. ve 8 olmayan diğer 2 baskı: Var
+Durum 3: Ne 9. Baskı ne de 8. Baskı seçilmediğinde :
 (4
-2) bunu yapmanın yolları.
+3) 
 
-Durum 3: Ne 8. ne de 8. baskı olmayan kitaplardan 3'ü seçin:
-(4
-3) bunu yapmanın yolları.
-
-Eski dostumuz Toplama Kuralını kullanarak, durumları ekleyebiliriz:
-
+Saymada Toplama Kuralını kullanılarak yukarıdaki üç durum toplanabilir:
 Toplam = 2 · (4  + (4
-              2) + 3) 16.
+              2) + 3)   = 16
 
-Alternatif olarak, 4'ten 3 kitap seçmenin tüm yollarını hesaplayabilir ve ardından “yasak” olanları (yani kısıtlamayı kıran seçimleri) çıkarabilirdik. Chris Piech buna Yasak Şehir yöntemi diyor.
+Alternatif çözüm olarak, 4 kitaptan 3 kitap seçmenin tüm yollarını hesaplanarak “yasak” istenmeyen durumlar (yani kısıtlamaya tabi olan seçimleri) çıkarılır. Chris Piech buna Yasak Şehir yöntemi denektedir.
 
-Yasak Dava: 8. baskı ve 9. baskı ve diğer 1 kitabı seçin. Var
+Yasak Durum: 8. Baskı ve 9. Baskı ve diğer 1 kitabı seçilmesinin kaç yolu vardır. 
 (4
-1) bunu yapmanın yolları (4'e eşittir).
+1)
 
 Toplam = Tüm olasılıklar-yasak = 20−4 = 16.
 
-Aynı doğru cevabı almanın iki farklı yolu!
 
-4 Grup Ataması
+## 4 Grup Ataması
 
 Korkunç "toplar ve kavanozlar" olasılık örneklerini muhtemelen duymuşsunuzdur. Bunlar ne hakkında? Öğeleri kaplara doldurmayı düşünebileceğimiz birçok farklı yol bunlar. İnsanların neden kaplarına çömleği dediklerini araştırdım. Jacob Bernoulli'nin oylamaya ve antik Roma'ya meraklı olduğu ortaya çıktı. Ve antik Roma'da oy sandıkları için çömleği kullandılar. Grup atama problemleri, birçok sayma problemi için faydalı metaforlardır.
 
