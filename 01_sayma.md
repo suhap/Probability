@@ -247,28 +247,26 @@ Toplam = Tüm olasılıklar-yasak = 20−4 = 16.
 
 ## 4 Grup Ataması
 
-Korkunç "toplar ve kavanozlar" olasılık örneklerini muhtemelen duymuşsunuzdur. Bunlar ne hakkında? Öğeleri kaplara doldurmayı düşünebileceğimiz birçok farklı yol bunlar. İnsanların neden kaplarına çömleği dediklerini araştırdım. Jacob Bernoulli'nin oylamaya ve antik Roma'ya meraklı olduğu ortaya çıktı. Ve antik Roma'da oy sandıkları için çömleği kullandılar. Grup atama problemleri, birçok sayma problemi için faydalı metaforlardır.
+Grup atama problemleri, birçok sayma problemi için faydalı metaforlardır. Nesnelerin kaplara kaç farklı yolla doldurulabilir? Olasılık derslerinde kaplara neden çömlek denilmektedir? Jacob Bernoulli'nin oylamaya ve antik Roma'ya meraklı olamasından kaynaklanmaktadır. Antik Roma'da oy sandıkları için çömlek kullanılırdı. 
 
-Grup atamasının birçok çeşidi olduğunu unutmayın (örneğin, değiştirme ile, değiştirme olmadan).
+## Farklı Nesnelerin Atanması
 
-Farklı Nesnelerin Atanması
+Problem: Tüm sonuçların eşit derecede olası olduğu r adresli bir hash tablosuna  n tane string ifade konulmak isteniyor. Bunu yapmanın kaç olası yolu var? Cevap: Bunu, her birinin r sonucu olan n bağımsız deney olarak düşünebilirsiniz. Saymada çarpma kuralı: r^n
 
-Problem: Diyelim ki urn'lere ayırt edilebilir n tane top koymak istiyorsunuz. (hayır bekleme öyle deme). Tamam iyi. urn yok. Tüm sonuçların eşit derecede olası olduğu bir karma tablonun r kovasına n dize koyacağımızı varsayalım. Bunu yapmanın kaç olası yolu var? Cevap: Bunu, her birinin r sonucu olan n bağımsız deney olarak düşünebilirsiniz. Arkadaşımızın Ürün Kuralı'nı kullanarak bu ortaya çıkıyor
-
-Belirsiz Nesnelerin Atanması
+## Belirsiz Nesnelerin Atanması
 
 Bölücü Yöntemi:
 
-Ayırıcı problem, n tane ayırt edilemez öğeyi r konteynere yerleştirmek istediğiniz problemdir. Bölücü yöntemi, bu sorunu iki tür nesneyi, n orijinal öğelerinizi ve (r–1) bölücülerini sıralayarak çözeceğinizi hayal ederek çalışır. Böylece, n'si aynı (öğeleriniz) ve r–1'i aynı (bölücüler) olan n + r–1 nesnelerine izin veriyorsunuz. Böylece:
+Ayırıcı problem, n tane ayırt edilemez nesne r konteynere yerleştirmek istenilmektedir. Bu problem n tane nesne ve (r–1) bölücüyü sıralanarak çözülebilir. Böylece, aynı n tane nesne ve r–1 tane bölücü toplamda n + r–1 nesnenin sıralanması problemi ortaya çıkar. 
 
 Toplam yol = (n+r -1)! / (n!(r −1)!) =
 (n+r -1
 r -1)
 
 Örnek 9
-Diyelim ki bir başlangıç ​​kuluçka merkezisiniz ve 4 şirkete yatırım yapmak için 10 milyon dolarınız var (1 milyon dolarlık artışlarla). Bu parayı kaç farklı şekilde tahsis edebilirsiniz?
+4 farklı sirkete toplamda 10 bin dolar yatırım kaç farklı sekilde yapılabilir?
 
-Bu, 4 çömleğe 10 top koymak gibidir. Bölücü Yöntemini kullanarak şunları elde ederiz:
+Bu problem, 4 çömleğe 10 top koyma problemi ile aynıdır. Bölücü Yöntemini kullanarak:
 
 Toplam yollar =
 (10+4−1
@@ -276,21 +274,8 @@ Toplam yollar =
 (13
 10) = 286.
 
-Ya 10 milyon doların tamamını yatırmanız gerekmiyorsa? (Diyelim ki ekonomi sıkı ve paranızı biriktirmek isteyebilirsiniz.)
 
-Fazladan bir şirketiniz olduğunu hayal edin: kendiniz. Şimdi 5 şirkete 10 milyon dolar yatırım yapıyorsunuz. Bu nedenle, cevap 10 topu 5 çömleğe koymakla aynıdır.
-
-Toplam yollar =
-(10+5−1
-10 )
-=
-(14
-10)
-= 1001.
-
-Ya Şirket 1'e en az 3 milyon dolar yatırım yapmak istediğinizi biliyorsanız?
-
-Şirket 1'e 3 milyon dolar vermenin bir yolu var. Kalan parayı yatırmanın yollarının sayısı, 7 topu 4 çömleğe koymakla aynıdır.
+3 bin dolarını birinci sirkete yatırmak kosulu ile 4 farklı sirkete toplamda 10 bin dolar yatırım kaç farklı sekilde yapılabilir?
 
 Toplam yollar =
 (7+4−1
@@ -300,20 +285,20 @@ Toplam yollar =
 7)
 = 120
 
-5 Bilgisayar Bilimi Vaka Çalışmaları
-Sayma, bilgisayar bilimi dünyasında birkaç nedenden dolayı önemlidir. Öncelikle (1) olasılığı temel düzeyde anlamak için öncelikle saymayı (2) anlamakta fayda var, bilgisayarlar hızlıyken, bazı problemler o kadar çok iş gerektiriyor ki, tamamlanması mantıksız bir zaman alıyor. Saymayı kullanarak ne kadar iş yapmamız gerektiğini daha iyi tahmin edebiliriz (3) bazı sayma problemleri o kadar büyük ve karmaşıktır ki onları çözmek için hesaplamadan faydalanırız.
+## 5 Bilgisayar Bilimi Vaka Çalışmaları
+Sayma, bilgisayar bilimi dünyasında birkaç nedenden dolayı önemlidir. Öncelikle (1) olasılığı temel düzeyde anlamak için öncelikle saymayı (2) anlamakta fayda vardır, bilgisayarlar hızlıyken, bazı problemler o kadar çok iş gerektirmektedir ki, tamamlanması zaman açısından mantıksızdır. Saymayı kullanarak ne kadar iş yapılması gerektiğini daha iyi tahmin edilebilir (3) bazı sayma problemleri o kadar büyük ve karmaşıktır ki onları çözmek için hesaplamadan faydalanılır.
 
-Örnek: Evrendeki Atomlar
+### Örnek: Evrendeki Atomlar
 
 Google'ın şu anki araştırma direktörü Peter Norvig, evrendeki atomların sayısı ve bunun bilgisayar bilimi ile ilişkisi hakkında büyük bir tartışma yaptı: Gözlemlenebilir evrendeki atomların sayısı yaklaşık 10 üzeri 80 (10^80). Bu ölçü, genellikle kanonik gerçekten büyük bir sayı olarak kullanılır. Evrende kesinlikle çok sayıda atom vardır. Önde gelen bir uzmanın dediği gibi,
 
-"Uzay büyük. Gerçekten büyük. Ne kadar uçsuz bucaksız, akıl almaz derecede büyük olduğuna inanamayacaksınız. Demek istediğim, kimyager için çok uzun bir yol olduğunu düşünebilirsiniz, ama bu sadece uzaya giden yer fıstığı." -Douglas Adams
+"Uzay büyük. Gerçekten büyük. Ne kadar uçsuz bucaksız, akıl almaz derecede büyük olduğuna inanamayacaksınız. Demek istediğim, kimyager için çok uzun bir yol olduğunu düşünebilirsiniz, yer fıstığından uzaya giden yol" -Douglas Adams
 
-Bu sayı genellikle bilgisayarların asla çözemeyeceği görevleri göstermek için kullanılır. Sorunlar, saymanın çarpım kuralıyla hızla böyle saçma bir boyuta büyüyebilir. Birkaç örneğe bakalım (yine Peter sayesinde).
+Bu sayı genellikle bilgisayarların asla çözemeyeceği görevleri göstermek için kullanılır. Sorunlar, saymanın çarpım kuralıyla hızla böyle saçma bir boyuta büyüyebilir. Birkaç örneğe bakalım.
 
 Bir Go tahtası, kullanıcının bir taş yerleştirebileceği 19 × 19 puana sahiptir. Noktaların her biri boş veya siyah veya beyaz taşla dolu olabilir. Çarpım sayma kuralına göre, benzersiz kart konfigürasyonlarının sayısını hesaplayabiliriz. Her tahta noktası, {Siyah, Beyaz, Taş Yok} kümesindeki üç seçenekten birine sahip olmaya karar verebileceğiniz benzersiz bir seçimdir, bu nedenle 3^(19×19) ≈ 10^172 olası tahta konumu vardır, ancak “yalnızca ” bu pozisyonların yaklaşık 10^170'i yasaldır. Bu, evrendeki atom sayısının karesi ile ilgilidir. Başka bir deyişle: her bir atom için başka bir atom evreni olsaydı, ancak o zaman evrende bir Go kartının benzersiz konfigürasyonları kadar çok atom olurdu.
 
-Örnek: Dijital Resim Sayısı
+## Örnek: Dijital Resim Sayısı
 
 Go konumlarından dijital resimlere geçelim. Mümkün olan her resmi görüntülemek için bir sanat projesi var. Elbette bu uzun zaman alacaktı, çünkü pek çok olası resim olmalı. Ama kaç tane? Her pikselin 2^24 ≈ 17 milyon farklı renkten biri olabileceği True Color olarak bilinen renk modelini varsayacağız.
 
@@ -323,17 +308,16 @@ Resim
 
 Cevap: Bir n piksel dizisi (17 milyon)n farklı resim üretir. (17 milyon)12 ≈ 10^86, yani küçücük 12 piksel ızgara, evrendeki atom sayısından bir milyon kat daha fazla resim üretir! 300 piksel dizisine ne dersiniz? 102167 resim üretebilir. Evrendeki atom sayısının büyük olduğunu düşünebilirsiniz, ancak bu sadece 300 piksellik bir dizideki resimlerin sayısı kadardır. Ve 12M piksel? 10^86696638 resim.
 
-Yani olası resimlerin sayısı gerçekten, gerçekten, gerçekten çok büyük. Ve evrendeki atomların sayısı, en azından bir dizi kombinasyon olarak, nispeten küçük görünüyor. Buradaki can alıcı fikir, bir dizi fiziksel şey olarak 10^80'in gerçekten büyük bir sayı olduğudur. Ancak bir dizi şey kombinasyonu olarak 1080 oldukça küçük bir sayıdır. 10^80'e kadar kombinasyon elde etmek için bir evren kadar malzeme gerekmez.
+Yani olası resimlerin sayısı gerçekten, gerçekten, gerçekten çok büyük. Ve evrendeki atomların sayısı, en azından bir dizi kombinasyon olarak, nispeten küçük görünüyor. Buradaki can alıcı fikir, bir dizi fiziksel şey olarak 10^80'in gerçekten büyük bir sayı olduğudur. Ancak bir dizi şey kombinasyonu olarak 10^80 oldukça küçük bir sayıdır. 10^80'e kadar kombinasyon elde etmek için bir evren kadar malzeme gerekmez.
 
-Örnek: Üstel Büyümeden Yararlanma
+## Örnek: Üstel Büyümeden Yararlanma
 
 Yukarıdaki argüman, saymanın çarpım kuralının bir sonucu olarak bazı problemlerin inanılmaz derecede zor olduğunu hissetmenize neden olabilir. Bir dakikanızı ayırıp, sayım çarpım kuralının nasıl yardımcı olabileceğinden bahsedelim! Çoğu logritmik zaman algoritması bu ilkeden yararlanır. 2^n inanılmaz derecede hızlı büyürse, log2(n)'nin muazzam n için bile küçük kalacağını da kabul eder.
 
 Gerçek bir dünya örneği için: yakın zamanda bir meslektaşım ve ben çok fazla veri gerektiren bir makine öğrenimi projesi yapıyorduk. Aslında programlama öğrencilerine giriş için verilen bir ödev için yaklaşık 10 milyon benzersiz çözüme ihtiyacımız vardı (ki bizde yoktu). Meslektaşım ve ben verileri kendimiz oluşturmaya karar verdik. Bir programlama sorununa 10 milyon benzersiz yanıtı nasıl oluşturabiliriz? Kolaydı! Ödev için değerlendirme listesi, öğrencilerin çözümlerini yazarken alabilecekleri 24 ikili kararı ifade etti. 24 karar noktasının tamamını kodladık ve 2^24 ≈ 1,6 milyon benzersiz çözüm elde ettik!
 
-2,076 / 5,000
-Translation results
-Örnek: Kümeleme
+
+## Örnek: Kümeleme
 
 Bilgisayar bilimcisi olarak tüm kariyerinizin bir noktasında, muhtemelen şu satırlar boyunca bir şeyler yapmak isteyeceksiniz: verilen n nesne, her nesne çifti arasında karşılaştırma yapan bir algoritma çalıştırın. Bunun somut bir örneği, hücrelerin DNA'sına dayalı olarak tek bir kişinin vücudundan n kanser hücresinin kümelenmesinden gelir. İlk adım olarak, her hücrenin DNA'sının diğerine ne kadar benzer olduğunu hesaplamak için bir "benzerlik" metriği çalıştırmamız gerekiyor. İkili karşılaştırmayı kaç kez çalıştırmanız gerekiyor?
 
