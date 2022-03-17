@@ -2,7 +2,7 @@
 
 İlkokuldaki öğrendiğimiz sayma kavramın bu derste tekrar edilecektir. Tabiki tekrar edilecek konular olasılığın temeli olacaktır. Ayrıca ders kapsamında öngörülebilir durumlar için sayma işlemi ve farklı nesnelerin nasıl sayılacağı öğrenilecektir. Çatısı bilgisayar bilimleri(yapay zeka, makina öğrenmesi) olan olasılığın temeli ise sayma kavramıdır. 
 
-$n^2$
+$$ n^2 $$
 
 # 2. Saymanın Temel İlkeleri
 ### Toplama kulllanılarak sayma:
