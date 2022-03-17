@@ -2,10 +2,7 @@
 
 İlkokuldaki öğrendiğimiz sayma kavramın bu derste tekrar edilecektir. Tabiki tekrar edilecek konular olasılığın temeli olacaktır. Ayrıca ders kapsamında öngörülebilir durumlar için sayma işlemi ve farklı nesnelerin nasıl sayılacağı öğrenilecektir. Çatısı bilgisayar bilimleri(yapay zeka, makina öğrenmesi) olan olasılığın temeli ise sayma kavramıdır. 
 
-
-$$ P^{5}_{4} + P^{5}_{5} = \frac{5!}{(5-4)!} + \frac{5!}{(5-5)!} $$ 
-$$ = \frac{5!}{(1)!} + \frac{5!}{(0)!} $$
-$$ = 120 + 120 = 240 $$
+$n^2$
 
 # 2. Saymanın Temel İlkeleri
 ### Toplama kulllanılarak sayma:
