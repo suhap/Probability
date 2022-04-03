@@ -97,24 +97,35 @@ Bu teori aynı zamanda sürekli örnek uzaylar için de geçerlidir. Tüm gerçe
 
 # Olasılık ve Bilgisayar
 
-Hesaplama gücündeki artış ve dijital verilerin bolluğu, birçok olasılığın bilgisayarlar tarafından ya simülasyonlar yoluyla ya da veri kümelerine sayılarak hesaplandığı anlamına gelir.
+Hesaplama gücündeki artış ve dijital verilerin bolluğu, birçok olasılığın bilgisayarlar tarafından ya simülasyonlar yoluyla ya da veri kümelerine sayma yoluyla hesaplandığı anlamına gelir. 
 
-Verilerden Olasılıklar
+### Veriler kullanılarak Olasılık Hesaplamaları
 
-Makine Öğrenimi (bazen Veri Bilimi olarak adlandırılır) olasılık, veri ve bilgisayarların aşk çocuğudur. Bazen makine öğrenimi karmaşık algoritmalar içerir. Ancak genellikle büyük veri kümelerine uygulanan olasılığın temel fikirleridir.
+Makine Öğrenimi (bazen Veri Bilimi olarak adlandırılır) olasılık, veri ve bilgisayarların aşk çocuğudur. Bazen makine öğrenimi karmaşık algoritmalar içerir. Ancak genellikle büyük veri kümelerine uygulanan temel olasılık fikirlerinden ibarettir.
 
 Örnek olarak, iyi düşünülmüş makine öğrenimi sayesinde başarılı olan bir şirket olan Netflix'i ele alalım. Hesapladıkları birincil olasılıklardan biri, bir kullanıcının belirli bir filmi izleme olasılığıdır.
 
-Rastgele bir kullanıcının, kullanıcı hakkında başka hiçbir bilgi verilmeden belirli bir filmi izlemesi olayı E olsun. Netflix veri tabanındaki kullanıcı sayısı çok olduğu için, basit bir sayma ile ortaya çıkan olasılık tanımını kullanarak P(E)'ye yaklaşık olarak yaklaşabiliriz:
+Rastgele bir kullanıcının, kullanıcı hakkında başka hiçbir bilgi verilmeden belirli bir filmi izlemesi olayı E olsun. Netflixteki kullanıcı sayısı çok fazla olduğu için “Kullanıcı sayısını” örnek uzay olarak kullanabiliriz. Netflix veritabanındaki kullanıcı sayısı büyük olduğundan, olasılık tanımını kullanarak P (E) 'yi yaklaşık olarak hesaplayabiliriz, bu da bazı basit sayımlarla ortaya çıkar:
 
 P(E) = limn→∞ n(E) / n ≈ filmi izleyen kullanıcı sayısı / kullanıcı sayısı
 
 Önemli bir uyarı olarak: Bu, yalnızca olasılığınızı hesapladığınız verilere göre bir sonuç çıkarmanıza izin verir. Örneğin, veri kümenizde Uganda'dan kullanıcılar eksikse, Uganda'da olmayan netflix kullanıcılarının filmi izleme olasılığını hesaplıyorsunuz (örneğin, dünyada rastgele bir kişinin filmi izlemiştir). Eksik verilerle başa çıkmanın zarif yolları var ve bunları daha sonra okumak için bırakıyoruz.
 
-simülasyonlar
+## Benzetimler
 
 Olasılıkları hesaplamanın başka bir yolu da simülasyondur. Olasılıkların analitik olarak hesaplanmasının çok zor olduğu bazı karmaşık problemler için (örneğin, karmaşık kısıtlamalar olduğu için), bilgisayarlarınızın rasgele sayı üretecini kullanarak simülasyonlar çalıştırabilirsiniz.
 
 Simülasyonlarınız örnek uzaydan rastgele örnekler üretiyorsa, bir E olayının olasılığı yaklaşık olarak E'den bir sonuç üreten simülasyonların kesrine eşittir. Yine, olasılık tanımına göre, simülasyon sayınız sonsuza yaklaştıkça, tahmin daha doğru olur.
 
 Bu güçlü bir araç olsa da, bazen bir simülasyonun olayı tatmin edecek kadar örnek oluşturması çok uzun sürebilir. Sonuç olarak, birçok olasılık programı ilk önce bir bilgisayar bilimcisinin olasılık teorisini kullanarak olasılıkları hesaplamasıyla başlar.
+
+# 7. VEYA (OR) olaylarının olasılığı
+
+P(A∪B) şeklinde yazılan A olayının veya B olayının olma olasılığını nasıl hesapladığınız, gerçekten sonuç uzaylarının boyutunu saymaya benzer. İki olayın "veya" olasılığını hesaplamak için kullanabileceğiniz denklem bu olayların "birbirini engelleyen" olup olmamasına bağlıdır.
+
+### Birbirni engelleyen olaylar
+
+Her iki olay uzayında da hiçbir sonuç yoksa, iki olay (E ve F) birbirini dışlayan (E ∩F = ∅) olarak kabul edilir (tüm olayın, örnek uzayın alt kümeleri olan karşılık gelen bir olay uzayına sahip olduğunu hatırlayın) . İngilizce'de birbirini dışlayan, iki olayın her ikisinin birden olamayacağı anlamına gelir.
+
+Karşılıklı dışlama görselleştirilebilir. Her sonucun bir altıgen olduğu aşağıdaki görsel örnek alanını düşünün. Elli altıgenin tümü, tam örnek alanıdır: Her iki olay E ve F, aynı örnek uzayının alt kümeleri olan olay uzaylarına sahiptir. Görsel olarak, iki setin çakışmadığını not edebiliriz. Birbirlerini dışlarlar: Her iki kümede de sonuç yoktur. 
+
