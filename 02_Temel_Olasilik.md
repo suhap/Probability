@@ -23,16 +23,34 @@ Olasılık hakkında konuşmaya başladığımız çeyrekte (hala birinci hafta)
 
 # 3. Olasılık
 
-20. yüzyılda insanlar, olasılığın ne olduğunu tam olarak tanımlamanın bir yolunu buldular:
+Günümüzde olasılık aşağıdaki formül kullanılarak tanımlanmaktadır.
 
 P(E) = lim n→∞ n(E)/n
 
-İngilizce'de bu şöyledir: Diyelim ki bir deneyin n denemesini gerçekleştiriyorsunuz. İstenen bir E olayının olasılığı, E ile sonuçlanan denemelerin gerçekleştirilen denemelerin sayısına oranıdır (deneme sayınız sonsuza yaklaştıkça limitte).
+Bir deneyde n deneme yaptığınızı varsayalım. İstenen E olayı olasılığı, E ile sonuçlanan denemelerin gerçekleştirilen deneme sayısına oranıdır (deneme sayınız sonsuza yaklaştıkça sınırda). Bir olasılık kavramını başka anlambilim de uygulayabilirsiniz. Atfedilen yaygın bir anlam, P (E) 'nin E'nin oluşma şansının bir ölçüsü olmasıdır.
 
-Bu matematiksel olarak titizdir. Olasılık kavramına başka anlamlar da uygulayabilirsiniz. Atfedilen yaygın bir anlam, P(E)'nin, E'nin meydana gelme şansının bir ölçüsü olmasıdır.
-
-Bir olasılığı genellikle başka bir şekilde düşünürüm: Dünya hakkında her şeyi bilmiyorum. O zaman o gider. Sonuç olarak, sınırlı bilgim göz önüne alındığında, E'nin gerçekleşeceğine olan inancımı ifade etmenin bir yolunu bulmam gerekiyor. Bu yorum, iki olasılık kaynağı olduğunu kabul eder: doğal rastgelelik ve kendi belirsizliğimiz.
+Olasılığın başka bir anlatımı: Dünya hakkında her şeyi bilinemez. Dolayısıyla olasılık, sınırlı bilgi göz önüne alındığında, E'nin gerçekleşeceğine olan inancı ifade etmenin bir yoludur. Bu yorum, iki olasılık kaynağı olduğunu kabul eder: doğal rastgelelik ve kendi belirsizliğimiz.
 
 Olasılığın farklı yorumları, vahşi (ve o kadar da vahşi olmayan) dünyada karşılaşacağınız olasılıkların birçok kökenine yansır. Bazı olasılıklar matematiksel kanıtlar kullanılarak analitik olarak hesaplanır. Bazı olasılıklar verilerden, deneylerden veya simülasyonlardan hesaplanır. Bazı olasılıklar sadece bir inancı temsil etmek için uydurulmuştur.
 
 Çoğu olasılık, yukarıdakilerin bir kombinasyonundan üretilir: birisi önceden bir inanç oluşturacaktır, bu inanç veri ve kanıt kullanılarak matematiksel olarak güncellenecektir.
+
+# 4. Olasılık Aksiyonları
+Aksiyom olarak kabul ettiğimiz olasılıklarla ilgili bazı temel gerçekler şunlardır:
+
+Temel Gerçek 1: 0 ≤ P(E) ≤ 1
+Bir deneyin denemelerini gerçekleştirirken, denemelerden daha fazla olay elde etmek mümkün değildir (bu nedenle olasılıklar 1'den azdır) aynı zamanda olayın 0'dan az tekrarını elde etmek mümkün değildir.
+
+Temel Gerçek 2: P(S) = 1
+İkinci aksiyom da mantıklıdır. Olay uzaylar örnek uzayı olusturdugu kabul edilirse, herbir deneme olayı olusturacaktır. Bu durum asagıdaki gibi anlatılabilir; Pasta yerseniz (olay uzay) pasta yeme olasılıgı (örnek uzayı) 1'dir.
+
+Temel Gerçek 3: P(E) = 1−P(E^C)
+Üçüncü kural oldukça kullanıslıdır. Herhangi bir olay için, herhangi bir eleman ya olaya aittir yada degildir. Bu durumun dünyada oldukça güzel uygulamaları mevcuttur. Akşam yemeginiz ya patetesdir yada patates degildir. 
+
+
+Bu bölümün geri kalanı size, X'in bir olay olduğu “X'in olasılığı nedir” şeklindeki soruları yanıtlamanız için araçlar verecektir. Örnek uzayda eşit olasılığa sahip olaylar olduğunda, veri veya simülasyon kullanarak veya diğer bilinen olasılıklardan analitik olarak bu tür soruları cevaplayabilmelisiniz. 
+
+Bazı örnek uzayların aynı derecede olası sonuçları vardır. Bu örnek uzayları seviyoruz, çünkü bu örnek uzaylarla ilgili olasılık sorularını basitçe sayarak hesaplamanın bir yolu var. İşte eşit derecede olası sonuçların olduğu birkaç örnek:
+
+# 5 Eşit Şanslı olaylar
+
