@@ -195,9 +195,19 @@ Genellikle bağımsızlık varsayımları, tamamen doğru oldukları için deği
 
 Daha fazla olasılık aracı toplamaya geçmeden önce, duralım ve olayları içeren olasılık problemlerini çözme stratejisi hakkında konuşalım.
 
-Etkinliklerinizi tanımlayın. İlk adım olarak, sorudaki tüm ilgili olaylara bir sembol verin. Ardından, bir sonraki adım olarak, çözmeye çalıştığınız soruyu bu olaylar açısından yazın.
+Olaylarınızı tanımlayın. İlk adım olarak, sorudaki tüm ilgili olaylara bir sembol verin. Ardından, bir sonraki adım olarak, çözmeye çalıştığınız soruyu bu olaylar açısından yazın.
 
-Eşit olasılığa sahip örnek uzaylar için uyanık olun – örnek uzayın tümü eşit olasılığa sahip sonuçlara sahipse olasılıkları hesaplamak çok daha kolaydır. Bazen, altta yatan nesneleri düşünmek yardımcı olabilir.
-Sonuçları eşit derecede olası kılmak için problemimiz farklı. Örneğin, "mississippi" kelimesindeki harflerin rastgele bir permütasyonunun dört "i"nin hepsinin bir arada olması olasılığını düşünüyorsanız, harfleri farklı düşünmek, onların farklı permütasyonlarının örnek uzayının hepsinin eşit derecede olası olduğu anlamına gelir. . Harfleri belirsiz olarak ele alırsanız, permütasyonlar eşit derecede olası değildir. Şaşırtıcı bir şekilde, harfleri farklı veya belirsiz olarak ele alıp almama konusunda seçim sizin. Örnek alanları ve olay alanlarını tanımlarken bu kararda tutarlı olmanız yeterlidir. Bu noktada olay çiftleri için iki özelliğimiz var: karşılıklı dışlama ve bağımsızlık. Bu özelliklere dikkat edin. Olaylar birbirini dışlıyorsa, olayların VEYA'sını hesaplamanın kolay olduğunu unutmayın. Olaylar bağımsız ise, olayların AND'sini hesaplamak kolaydır. Bazen, belirli bir olay grubunun ya bağımsız ya da birbirini dışlayan olduğunu varsayabileceğiniz size açıkça söylenecektir. Diğer zamanlarda, olduklarına dair mantıklı bir argüman yapabilirsiniz (örneğin, bir hashmap'te dizeleri karma yapıyorsanız, bir dizenin bir kovaya hash ettiği olay, diğerine hash olduğu olaydan karşılıklı olarak ayrıdır).
+Eşit olasılığa sahip örnek uzaylar için uyanık olun – örnek uzayın tümü eşit olasılığa sahip sonuçlara sahipse olasılıkları hesaplamak çok daha kolaydır. Bazen, sonuçların eşit derecede olası olmasını sağlamak için probleminizin altında yatan nesneleri farklı olarak düşünmek yardımcı olabilir. Örneğin, "mississippi" kelimesindeki harflerin rastgele bir permütasyonunun dört "i" nin hepsine birden sahip olma olasılığını düşünüyorsanız, harfleri farklı olarak düşünmek, farklı permütasyonlarının örnek uzaylarının hepsinin eşit derecede olası olduğu anlamına gelir. . Harfleri belirsiz olarak ele alırsanız, permütasyonlar eşit derecede olası değildir. Şaşırtıcı bir şekilde, harfleri farklı veya belirsiz olarak ele alıp almayacağınıza dair seçim size aittir. Örnek mekânları ve etkinlik alanlarını tanımlarken bu kararda tutarlı olmanız yeterlidir. Bu noktada olay çiftleri için iki özelliğimiz var: karşılıklı dışlama ve bağımsızlık. Bu özelliklere dikkat edin. Olaylar birbirini dışlıyorsa, olayların VEYA'sını hesaplamanın kolay olduğunu unutmayın. Olaylar bağımsız ise, olayların VE'sini hesaplamak kolaydır. Bazen, belirli bir olay grubunun ya bağımsız ya da birbirini dışlayan olduğunu varsayabileceğiniz size açıkça söylenecektir. Diğer zamanlarda, olduklarına dair mantıklı bir argüman yapabilirsiniz (örneğin, bir hashmap'te dizeleri karma yapıyorsanız, bir dizenin bir adreste hash işlemine tabi tutulması olayı, diğerine adreste hash işlemine tabi tutulmasıolayından karşılıklı olarak ayrıdır).
 
 AND'leri OR'lere (ve tersi) dönüştürmek için tamamlayıcıları ve De-Morgan yasasını kullanabilirsiniz. Bu, örneğin iki olayın VEYA olasılığını hesaplamanızın istendiği ancak yalnızca bunlar arasındaki bağımsızlığı bildiğiniz durumlarda yardımcı olabilir.
+
+Herhangi iki E ve F olayı için De Morgan Olasılık Yasası:
+P((E ∩F)^C) = P(E^C ∪ F^C) Version 1
+P((E ∪F)^C) = P(E^C ∩ F^C) Version 2
+
+Bu genellikle bir olayın toplamının ve tümleyeninin 1 olduğu kuralıyla birlikte kullanılır:
+P(E ∩F) = 1−P((E ∩ F)^C)     Since P(E) + P(E^C) = 1
+        = 1−P(E^C ∪ F^C)     By DeMorgan’s law
+
+P(E ∪F) = 1−P((E ∪ F)^C)     Since P(E) + P(E^C) = 1
+        = 1−P(E^C ∩ B^C)     By DeMorgan’s law
