@@ -1,7 +1,7 @@
 # 1. Giriş
 Olasılık hakkında konuşmaya başladığımız çeyrekte (hala birinci hafta) o zamandır. Yine ilk ilkelerden inşa edeceğiz. Bu hafta başında öğrendiğimiz saymayı yoğun bir şekilde kullanacağız.
 
-# 2 Olay Uzayı ve Örnek UzayuÖ
+# 2 Olay Uzayı ve Örnek Uzayı
 
 Örnek uzay, S, bir deneyin tüm olası sonuçlarının kümesidir. Örneğin:
 
@@ -53,4 +53,68 @@ Bu bölümün geri kalanı size, X'in bir olay olduğu “X'in olasılığı ned
 Bazı örnek uzayların aynı derecede olası sonuçları vardır. Bu örnek uzayları seviyoruz, çünkü bu örnek uzaylarla ilgili olasılık sorularını basitçe sayarak hesaplamanın bir yolu var. İşte eşit derecede olası sonuçların olduğu birkaç örnek:
 
 # 5 Eşit Şanslı olaylar
+Bazı örnek uzayların eşit olası sonuçları vardır. Bu örnek uzayları seviyoruz çünkü bu örnek uzaylarla ilgili olasılık sorularını basitçe sayarak hesaplamanın bir yolu var. Eşit derecede olası sonuçların olduğu birkaç örnek:
 
+1. Yazı/Tura atma olayı: S = {Yazı, Tura}
+
+2. İki para ile Yazı/Tura atma olayı: S = {(T, T), (T, Y), (Y, T), (Y, Y)}
+
+3. Zar atma olayı: S = {1, 2, 3, 4, 5, 6}
+
+Her sonuç eşit olasılığa sahip olduğundan ve örnek uzayın olasılığı 1 olması gerektiğinden, her sonucun olasılığa sahip olması gerektiğini kanıtlayabiliriz:
+
+P(bir sonuç) = 1/|S|
+
+Bir olay, eşit derecede olası sonuçlara sahip bir örnek uzayın bir alt kümesiyse.
+
+Eşit Olasılıklı Sonuçların Olasılığı S, S'deki sonuçların bir alt kümesi olan bir E olayı için eşit olası sonuçlara sahip bir örnek uzay ise:
+
+P(E) = E'deki sonuç sayısı S'deki sonuç sayısı = |E| / |S|
+
+Eşit derecede olası sonuç kuralına dayalı bir olasılığı hesaplamak için bazı yaklaşımlar mevcuttur:
+1-) Örnek uzay açıkça tanımlanması gerekmektedir. Örnek uzay içindeki tüm sonuçların esit sanslı olaylar olmalıdır. 
+2-) İkinci adımda örnek uzaydaki eleman sayısı bilinmesi gerekmektedir. 
+3-) Olayların sayılarının bilinmesi gerekmektedir. Olay kümesi 1. adımda tanımlanan Örnek uzayın elemanları içinden olusmalıdır. 
+
+### örnek 1
+
+İki zarın toplamının 7 olma olasılığı kaçtır?
+
+Hata: Örnek alanınızı, iki zarın (2'den 12'ye kadar) tüm olası toplam değerleri olarak tanımlayabilirsiniz. Ancak bu örnek uzay "eşit olasılıklı" testte başarısız olur. Toplam 7'ye sahip olma olasılığı ile, toplam 2'ye sahip olma olasılığınız eşit değildir.
+
+Çözüm: İki zar atıldığında olası sonuçları yazalım ve bu sonuçlarda (1,2) ile (2,1) sonuçlarının ayrı olduğuna dikkat edin. 1/36 olarak sayma çarpım kuralını kullanarak her sonucun olasılığını hesaplayabiliriz. Örnek uzaydaki tüm sonuçlar eşit derecede olasıdır:
+
+(1, 1) (1, 2) (1, 3) (1, 4) (1, 5) (1, 6)
+(2, 1) (2, 2) (2, 3) (2, 4) (2, 5) (2, 6)
+(3, 1) (3, 2) (3, 3) (3, 4) (3, 5) (3, 6)
+(4, 1) (4, 2) (4, 3) (4, 4) (4, 5) (4, 6)
+(5, 1) (5, 2) (5, 3) (5, 4) (5, 5) (5, 6)
+(6, 1) (6, 2) (6, 3) (6, 4) (6, 5) (6, 6)
+
+Olay uzayı (iki zarın toplamının 7 olduğu örnek boşluğunun alt kümesi) kırmızıyla vurgulanır.
+P(İki zarın toplamı 7) = |E| / |S| = 6/36 = 1/6
+Bu teori aynı zamanda sürekli örnek uzaylar için de geçerlidir. Tüm gerçek değerli sayıların eşit olasılıkla olduğu, 0 ile 1 arasında gerçek değerli bir sayı üreten "rastgele" bilgisayar işlevinin tüm sonuçlarının örnek uzayını düşünün. Şimdi E olayını, üretilen sayının [0.3 ila 0.7] aralığında olduğunu düşünün. Örnek uzay eşit olasılığa sahip olduğundan, P(E), E'nin boyutunun S'nin boyutuna oranıdır. Bu durumda P(E) = 0.4.
+
+# Olasılık ve Bilgisayar
+
+Hesaplama gücündeki artış ve dijital verilerin bolluğu, birçok olasılığın bilgisayarlar tarafından ya simülasyonlar yoluyla ya da veri kümelerine sayılarak hesaplandığı anlamına gelir.
+
+Verilerden Olasılıklar
+
+Makine Öğrenimi (bazen Veri Bilimi olarak adlandırılır) olasılık, veri ve bilgisayarların aşk çocuğudur. Bazen makine öğrenimi karmaşık algoritmalar içerir. Ancak genellikle büyük veri kümelerine uygulanan olasılığın temel fikirleridir.
+
+Örnek olarak, iyi düşünülmüş makine öğrenimi sayesinde başarılı olan bir şirket olan Netflix'i ele alalım. Hesapladıkları birincil olasılıklardan biri, bir kullanıcının belirli bir filmi izleme olasılığıdır.
+
+Rastgele bir kullanıcının, kullanıcı hakkında başka hiçbir bilgi verilmeden belirli bir filmi izlemesi olayı E olsun. Netflix veri tabanındaki kullanıcı sayısı çok olduğu için, basit bir sayma ile ortaya çıkan olasılık tanımını kullanarak P(E)'ye yaklaşık olarak yaklaşabiliriz:
+
+P(E) = limn→∞ n(E) / n ≈ filmi izleyen kullanıcı sayısı / kullanıcı sayısı
+
+Önemli bir uyarı olarak: Bu, yalnızca olasılığınızı hesapladığınız verilere göre bir sonuç çıkarmanıza izin verir. Örneğin, veri kümenizde Uganda'dan kullanıcılar eksikse, Uganda'da olmayan netflix kullanıcılarının filmi izleme olasılığını hesaplıyorsunuz (örneğin, dünyada rastgele bir kişinin filmi izlemiştir). Eksik verilerle başa çıkmanın zarif yolları var ve bunları daha sonra okumak için bırakıyoruz.
+
+simülasyonlar
+
+Olasılıkları hesaplamanın başka bir yolu da simülasyondur. Olasılıkların analitik olarak hesaplanmasının çok zor olduğu bazı karmaşık problemler için (örneğin, karmaşık kısıtlamalar olduğu için), bilgisayarlarınızın rasgele sayı üretecini kullanarak simülasyonlar çalıştırabilirsiniz.
+
+Simülasyonlarınız örnek uzaydan rastgele örnekler üretiyorsa, bir E olayının olasılığı yaklaşık olarak E'den bir sonuç üreten simülasyonların kesrine eşittir. Yine, olasılık tanımına göre, simülasyon sayınız sonsuza yaklaştıkça, tahmin daha doğru olur.
+
+Bu güçlü bir araç olsa da, bazen bir simülasyonun olayı tatmin edecek kadar örnek oluşturması çok uzun sürebilir. Sonuç olarak, birçok olasılık programı ilk önce bir bilgisayar bilimcisinin olasılık teorisini kullanarak olasılıkları hesaplamasıyla başlar.
