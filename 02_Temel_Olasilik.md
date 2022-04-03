@@ -127,5 +127,10 @@ P(A∪B) şeklinde yazılan A olayının veya B olayının olma olasılığını
 
 Her iki olay uzayında da hiçbir sonuç yoksa, iki olay (E ve F) birbirini dışlayan (E ∩F = ∅) olarak kabul edilir (tüm olayın, örnek uzayın alt kümeleri olan karşılık gelen bir olay uzayına sahip olduğunu hatırlayın) . İngilizce'de birbirini dışlayan, iki olayın her ikisinin birden olamayacağı anlamına gelir.
 
-Karşılıklı dışlama görselleştirilebilir. Her sonucun bir altıgen olduğu aşağıdaki görsel örnek alanını düşünün. Elli altıgenin tümü, tam örnek alanıdır: Her iki olay E ve F, aynı örnek uzayının alt kümeleri olan olay uzaylarına sahiptir. Görsel olarak, iki setin çakışmadığını not edebiliriz. Birbirlerini dışlarlar: Her iki kümede de sonuç yoktur. 
+Karşılıklı dışlama görselleştirilebilir. Her sonucun bir altıgen olduğu aşağıdaki görsel örnek alanını düşünün. Elli altıgenin tümü, tam örnek alanıdır: 
+
+![menu](https://raw.githubusercontent.com/suhap/Probability/master/resource/2-1.png)
+
+
+Her iki olay E ve F, aynı örnek uzayının alt kümeleri olan olay uzaylarına sahiptir. Görsel olarak, iki setin çakışmadığını not edebiliriz. Birbirlerini dışlarlar: Her iki kümede de sonuç yoktur. 
 
