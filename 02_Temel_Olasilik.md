@@ -130,7 +130,74 @@ Her iki olay uzayında da hiçbir sonuç yoksa, iki olay (E ve F) birbirini dı�
 Karşılıklı dışlama görselleştirilebilir. Her sonucun bir altıgen olduğu aşağıdaki görsel örnek alanını düşünün. Elli altıgenin tümü, tam örnek alanıdır: 
 
 ![menu](https://raw.githubusercontent.com/suhap/Probability/master/resource/2-1.png)
-
+Şekil 1. Birbirini dışalayan olaylar
 
 Her iki olay E ve F, aynı örnek uzayının alt kümeleri olan olay uzaylarına sahiptir. Görsel olarak, iki setin çakışmadığını not edebiliriz. Birbirlerini dışlarlar: Her iki kümede de sonuç yoktur. 
 
+### Birbirini Dışlayan Olayların Olasılığı
+
+İki olay, E ve F birbirini dışlarsa, o zaman
+
+P(E ∪F) = P(E) +P(F)
+
+
+Bu özellik, E ve F'nin eşit olasılıklı bir örnek uzaydan olup olmadığına bakılmaksızın geçerlidir. Ayrıca, fikir ikiden fazla olayı kapsar. Diyelim ki X1,X2 ...Xn olayları var, burada her olay birbirini dışlıyor. O zamanlar:
+
+P(X1 ∪X2 ∪··· ∪Xn) = n ∑i=1 P(Xi)
+
+İki olayın birbirini dışlayan ise, bu olayların kesişme olasılığını ("veya") hesaplamak gerçekten basittir. Şekil 1'deki örnekte, örnek uzaydaki sonuçların eşit derecede olası olduğunu düşünürsek, E olayının 7 sonucu olduğundan P(E) = 7/50 ve F olayının 4 sonucu olduğundan P(F) = 4/50 sonuçlar. Birbirlerini dışladıkları için, şunu hesaplayabiliriz:
+
+P(E ∪F) = P(E) +P(F) = 7 / 50 + 4 / 50 = 11 / 50 = 0.22
+
+### Dahil etme hariç tutma
+
+Ne yazık ki, tüm olaylar birbirini dışlamaz. E ve F olaylarının birbirini dışlamadığı durumlarda P(E ∪F) hesaplamak istiyorsanız, dahil etme hariç tutma ilkesini kullanarak çift sayımınızı hesaba katmanız gerekir:
+
+Dahil Etme Hariç Tutma İlkesi
+
+Herhangi iki olay için, E ve F:
+P(E ∪F) = P(E) +P(F)−P(E ∩F)
+Bu özellik, E ve F'nin eşit olasılıklı bir örnek uzaydan olup olmadığına ve olayların birbirini dışlayan olup olmadığına bakılmaksızın geçerlidir. Dahil Etme-Dışlama ilkesi ikiden fazla olayı kapsar, ancak önemli ölçüde daha karmaşık hale gelir. E1,E2 ...En olayları için:
+
+P(E1 ∪E2 ∪··· ∪En) =n∑r=1 (−1)^r+1 Yr
+
+Yr, alt kümenin boyutunun r olduğu tüm olay alt kümeleri için birleşme olasılığının toplamıdır. Bu yaklaşım genişletilirse: olayların her birinin tüm olasılıklarını kendi başlarına ekleyin. Ardından, iki olayın tüm kombinasyonlarının birleşiminin (“ve”) olasılığını çıkarın. Daha sonra, her seferinde toplamadan çıkarmaya değiştirerek, n'ye kadar tüm güç kümesi boyutları için üç olayın tüm kombinasyonlarının birleşiminin olasılığını ekleyin.
+
+Üç olay için, E, F ve G bu formül matematiksel olarak şu şekilde genişler:
+P(E ∪F ∪G) = +P(E) +P(F) +P(G) −P(E ∩F)−P(E ∩G)−P(F ∩G) +P(E ∩ F ∩G)
+
+# 8. VE (AND) olaylarının olasılığı
+
+E olayının ve F olayının olma olasılığını nasıl hesapladığınız, yazılı P(E ∩F) veya bazen P(EF) bunların “bağımsız” olup olmamasına bağlıdır.
+
+### Bağımsızlık
+
+İki olay E ve F bağımsız olarak adlandırılır, eğer: P(E ∩F) = P(E)P(F). İngilizce'de: iki olay bağımsızdır, her iki olayın olma olasılığı, her bir olayın kendi başına olma olasılığına eşittir, birlikte çarpılır. Aksi takdirde, bunlara bağımlı olaylar denir.
+
+Bağımsızlık kavramı makine öğreniminde özellikle önemli olacaktır. Birçok olayın “ortak” olasılığını (olayların “ve” olasılığının) bilmek karmaşık sistemler için zor olabilir. Bilgisayarlar, bağımsızlık iddialarında bulunarak, temel olarak denklemin nasıl hesaplanacağını ayrıştırabilirler: Basitçe, her bir temel olayın olasılığını hesaplayarak denklemi hesaplayabilirler.
+
+Bağımsızlık
+E ve F iki olay bağımsız ise:
+
+P(E ∩F) = P(E)P(F)
+
+Bu özellik, E ve F'nin eşit olasılıklı bir örnek uzaydan olup olmadığına ve olayların birbirini dışlayan olup olmadığına bakılmaksızın geçerlidir. Bağımsızlık ilkesi ikiden fazla olayı kapsar. Tüm olayların birbirinden bağımsız olduğu E1,E2 ...En olayları için:
+
+P(E1 ∩E2 ∩··· ∩En) =n ∏i=1 P(Ei)
+
+Karşılıklı dışlama özelliğinin iki olayın OR olasılığını hesaplamayı kolaylaştırması gibi, bağımsızlık da iki olayın AND değerini hesaplamayı kolaylaştırır. İki olayın bağımsız olmadığı durumda, olasılıklarını doğrudan hesaplamanın hala yolları vardır. Ancak bunu yapmak için bir sonraki bölümde bir kavram öğrendikten sonra öğreneceğiz: Koşullu Olasılık.
+
+Bağımsızlık matematiksel bir tanımdır ve biri size iki olayın bağımsız olduğunu söylerse, ima edilen formülü çıkarmaya hazır olmalısınız. Bunun ne anlama geldiğine dair sezgisel bir anlayış geliştirmenizi de istiyoruz. Bağımsızlık, bir olayın gerçekleşmesi diğerinin olma olasılığını etkilemediğinde ortaya çıkar. Örneğin, düzgün kenarlı bir zar (F) üzerine 4 attığınız olay, öfkeli keçiler (G) tarafından yenilme olayından bağımsızdır. Birinin olma olasılığı diğerinin olayını etkilemez ve bu nedenle her ikisinin de olma olasılığını bilmek istiyorsanız P(FG), diğerinin sonucunu dikkate almadan her olayın olasılığını hesaplayabilirsiniz.
+
+Genellikle bağımsızlık varsayımları, tamamen doğru oldukları için değil, olasılık problemlerini çözmek için çok faydalı oldukları için yapılır. Verilerden gelen olasılıklarla çalışırken, çok az şey bağımsızlığın matematiksel tanımına uyacaktır. Bunun iki nedeni olabilir: birincisi, verilerden veya simülasyondan hesaplanan olaylar tam olarak kesin değildir. İkincisi, karmaşık dünyamızda pek çok şey, küçük bir miktar bile olsa birbirini etkiler. Buna rağmen, çoğu zaman yanlış ama faydalı bir bağımsızlık varsayımı yaparız.
+
+# 9 Problem Çözme Stratejisi
+
+Daha fazla olasılık aracı toplamaya geçmeden önce, duralım ve olayları içeren olasılık problemlerini çözme stratejisi hakkında konuşalım.
+
+Etkinliklerinizi tanımlayın. İlk adım olarak, sorudaki tüm ilgili olaylara bir sembol verin. Ardından, bir sonraki adım olarak, çözmeye çalıştığınız soruyu bu olaylar açısından yazın.
+
+Eşit olasılığa sahip örnek uzaylar için uyanık olun – örnek uzayın tümü eşit olasılığa sahip sonuçlara sahipse olasılıkları hesaplamak çok daha kolaydır. Bazen, altta yatan nesneleri düşünmek yardımcı olabilir.
+Sonuçları eşit derecede olası kılmak için problemimiz farklı. Örneğin, "mississippi" kelimesindeki harflerin rastgele bir permütasyonunun dört "i"nin hepsinin bir arada olması olasılığını düşünüyorsanız, harfleri farklı düşünmek, onların farklı permütasyonlarının örnek uzayının hepsinin eşit derecede olası olduğu anlamına gelir. . Harfleri belirsiz olarak ele alırsanız, permütasyonlar eşit derecede olası değildir. Şaşırtıcı bir şekilde, harfleri farklı veya belirsiz olarak ele alıp almama konusunda seçim sizin. Örnek alanları ve olay alanlarını tanımlarken bu kararda tutarlı olmanız yeterlidir. Bu noktada olay çiftleri için iki özelliğimiz var: karşılıklı dışlama ve bağımsızlık. Bu özelliklere dikkat edin. Olaylar birbirini dışlıyorsa, olayların VEYA'sını hesaplamanın kolay olduğunu unutmayın. Olaylar bağımsız ise, olayların AND'sini hesaplamak kolaydır. Bazen, belirli bir olay grubunun ya bağımsız ya da birbirini dışlayan olduğunu varsayabileceğiniz size açıkça söylenecektir. Diğer zamanlarda, olduklarına dair mantıklı bir argüman yapabilirsiniz (örneğin, bir hashmap'te dizeleri karma yapıyorsanız, bir dizenin bir kovaya hash ettiği olay, diğerine hash olduğu olaydan karşılıklı olarak ayrıdır).
+
+AND'leri OR'lere (ve tersi) dönüştürmek için tamamlayıcıları ve De-Morgan yasasını kullanabilirsiniz. Bu, örneğin iki olayın VEYA olasılığını hesaplamanızın istendiği ancak yalnızca bunlar arasındaki bağımsızlığı bildiğiniz durumlarda yardımcı olabilir.
