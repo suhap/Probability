@@ -12,6 +12,7 @@ Olasılık hakkında konuşmaya başladığımız çeyrekte (hala birinci hafta)
 5. Bir günde sosyal medyada geçirilen süre: S = {x|x ∈ R,0 ≤ x ≤ 24}
 
 Örnek uzayın kendisine "kesin olay", bos kümeye ise "olanaksız olay" denir. Eleman sayısı sonluysa "sonlu örnek uzayı" söz konusudur. Böyle bir S uzayında her bir olaya karsı gelen sayı pozitif ve bu sayıların toplamı 1'e esitse S ye "sonlu olasılık uzayı",  Sayıların tümünün esit olması durumunda da "eş olumlu örnek uzayı" adı verilir. Eş olumlu bir örnek uzayında bir olayın olasılığı, uygun sonuçların sayısının sonuçların sayısına oranıdır.
+
 Örnek uzayın her alt kümesi, "olay uzayı" adını alır.  Olay Uzayı, E, anlam yüklediğimiz S'nin bir alt kümesidir. Küme notasyonunda (E ⊆ S). 
 
 
