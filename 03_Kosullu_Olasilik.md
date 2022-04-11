@@ -1,59 +1,42 @@
-# 1. Giriş
-Olasılık hakkında konuşmaya başladığımız çeyrekte (hala birinci hafta) o zamandır. Yine ilk ilkelerden inşa edeceğiz. Bu hafta başında öğrendiğimiz saymayı yoğun bir şekilde kullanacağız.
+# 1 Koşullu Olasılık
+Koşullu olasılık “Bir F olayını daha önceden gerçekleştiği göz önüne alındığında E olayının gerçekleşme şansının ne olduğunu” belirtir. Makine öğrenimi ve olasılığı konusunda kritik bir fikirdir, çünkü yeni kanıtlar karşısında inançlarımızı güncellememizi sağlar.
 
-# 2 Koşullu Olasılık
-İngilizce'de, koşullu bir olasılık “başka bir F olayını zaten gözlemlemiş olduğum göz önüne alındığında, bir E olayının olma şansı nedir” der. Makine öğrenimi ve olasılıkta kritik bir fikir çünkü yeni kanıtlar karşısında inançlarımızı güncellememize izin veriyor.
+Bir olayı koşullandırdığınızda, o olayın gerçekleştiği evrene girersiniz. Matematiksel olarak, F'yi koşullandırırsanız, F yeni örnek uzayınız olur. F'nin yer aldığı uzayda, tüm olasılık kuralları hala geçerlidir!
 
-Bir olayın gerçekleşmesini şart koştuğun zaman, o olayın gerçekleştiği evrene giriyorsun. Matematiksel olarak, F'yi koşullandırırsanız, F yeni örnek alanınız olur. F'nin gerçekleştiği evrende, tüm olasılık kuralları hala geçerlidir!
-
-Koşullu olasılığı hesaplamanın tanımı:
-Koşullu Olasılığın Tanımı
-
+Koşullu Olasılığın Tanımı:
 F olayının (diğer adıyla koşullu) zaten gerçekleştiği göz önüne alındığında, E olasılığı:
 
 P(E|F) = P(E ∩F) / P(F)
 
-Bunun neden doğru olduğuna dair bir sezgi edinmek için görselleştirme arkadaşımıza dönelim. Yine, her biri bir altıgen olarak çizilmiş 50 eşit olası sonuca sahip bir örnek uzayın alt kümeleri olan sonuçları olan E ve F olaylarını ele alalım:
+Her biri bir altıgen olarak çizilmiş 50 eşit olası sonuca sahip bir örnek uzayın alt kümeleri olan E ve F olaylarını ele alalım:
 
 ![kosul1](https://raw.githubusercontent.com/suhap/Probability/master/resource/3-1.png)
 Şekil 1: Koşullu Olasılık Sezgisi
 
-F üzerinde koşullandırma, F'nin gerçekleştiği dünyaya girdiğimiz anlamına gelir (ve eşit derecede olası 14 sonucu olan F, yeni örnek uzayımız haline gelmiştir). F olayının gerçekleştiği göz önüne alındığında, E olayının gerçekleşmesinin koşullu olasılığı, E'nin F ile tutarlı olan sonuçlarının alt kümesidir. Bu durumda, bunların E ∩F'deki üç sonuç olduğunu görsel olarak görebiliriz. Böylece elimizde:
+F üzerinde koşullandırma, F'nin gerçekleştiği dünyaya girdiğimiz anlamına gelir (ve eşit derecede olası 14 sonucu olan F, yeni örnek uzayımız haline gelmiştir). F olayının gerçekleştiği göz önüne alındığında, E olayının gerçekleşmesinin koşullu olasılığı, E'nin F ile kesiştiği sonuçlarının alt kümesidir. Bu durumda, bunların E ∩F'deki üç sonuç olduğunu görsel olarak görebiliriz. Böylece:
 
 P(E|F) = P(E ∩F) / P(F) = (3/50) / (14/50) = 3 / 14 ≈ 0.21
 
-Görsel örnek (eşit olasılıklı sonuç boşlukları ile) sezgi kazanmak için faydalı olsa da, örnek uzayın eşit derecede olası sonuçlara sahip olup olmadığına bakılmaksızın koşullu olasılık geçerlidir!
+Her ne kadar görsel örnek (eşit derecede olası sonuç alanlarına sahip) sezgi kazanmak için faydalı olsa da, örnek alanın eşit olasılıklı sonuçlara sahip olup olmadığına bakılmaksızın koşullu olasılık geçerlidir!
 
 Zincir Kuralı
 Koşullu olasılığın tanımı şu şekilde yeniden yazılabilir:
-
 P(E ∩F) = P(E|F)P(F)
 
-buna Zincir Kuralı diyoruz. Sezgisel olarak, E ve F olaylarını gözlemleme olasılığının, F'yi gözlemlediğiniz için E'yi gözlemleme olasılığı ile çarpılan F'yi gözlemleme olasılığı olduğunu belirtir.
-
-Zincir Kuralının genel şekli şöyledir:
-
+bu tanımlama zincir kuralı denilebilir. Genel olarak E ve F olayının çakışımının olasılığı, F olayının olasılığı ile F olayı gerçekleştiği koşulda E olayının olasılığının çapımıdır. Aşağıda zincir kuralının genel formu verilmiştir:
 P(E1 ∩E2 ∩··· ∩En) = P(E1)P(E2|E1)...P(En|E1 ...En−1)
 
 # 3 Toplam Olasılık Yasası
 
-Zeki bir kişi bir keresinde, şekil 1'deki gibi bir resme baktığında, E olayının iki kısımdan oluştuğunu düşünebileceğini gözlemlemişti, F'deki kısım, (E ∩F) ve "olmayan kısım". t, (E ∩F^ C). Bu doğrudur çünkü F ve F^C, birlikte tüm örnek uzayı kapsayan birbirini dışlayan sonuç kümeleridir. Daha fazla araştırmadan sonra bunun matematiksel olarak doğru olduğu kanıtlandı ve çok sevindiriciydi:
-
+Yukarıdaki resim incelendiğinde E olayının iki bölümden oluştuğu kabul edilebilir. F içindeki kısmı: (E∩F) ve F içinde olmayan kısmı: (E∩FC). Zaten F ve FC tüm örnek uzayını kapsayan birbirini dışlayan olaylardır. 
 P(E) = P(E ∩F) +P(E ∩F^C )
 
-Bu gözlem, zincir kuralıyla birleştirildiğinde özellikle yararlı olduğunu kanıtladı ve çok yararlı bir araç ortaya çıkardı, ona büyük bir isim verildi, toplam olasılık yasası.
-
-Toplam Olasılık Yasası
-
 Yukarıdaki gözlemimizi zincir kuralıyla birleştirirsek çok kullanışlı bir formül elde ederiz:
-
 P(E) = P(E|F)P(F) +P(E|F^C)P(F^C)
 
-Kuralın daha genel bir versiyonu var. Örnek uzayınızı herhangi bir sayıda birbirini dışlayan olaya bölebilirseniz: B1,B2,...Bn, örnek uzaydaki her sonuç bu olaylardan birine düşecek şekilde, o zaman:
-
+Örnek uzay birbirini dışlayan B1,B2… ,Bn tane etkinliğe bölünebiliyorsa;
 P(E) = n∑i=1 P(E|Bi)P(Bi)
 
-Toplam adı (sanırım), Bi'deki olayların toplam örnek uzayını oluşturması gerektiği gerçeğinden geliyor.
 
 # 4 Bayes Teoremi
 
