@@ -14,3 +14,6 @@ F olayının (diğer adıyla koşullu) zaten gerçekleştiği göz önüne alın
 P(E|F) = P(E ∩F) / P(F)
 
 Bunun neden doğru olduğuna dair bir sezgi edinmek için görselleştirme arkadaşımıza dönelim. Yine, her biri bir altıgen olarak çizilmiş 50 eşit olası sonuca sahip bir örnek uzayın alt kümeleri olan sonuçları olan E ve F olaylarını ele alalım:
+
+![kosul1](https://raw.githubusercontent.com/suhap/Probability/master/resource/2-1.png)
+Şekil 1. Birbirini dışalayan olaylar
