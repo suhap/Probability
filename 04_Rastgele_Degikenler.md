@@ -55,3 +55,21 @@ E[X] = 5(5/165) +10(10/165) +150(150/165) = 22635/165 = 137
 P = 0,5 ile tura gelen adil bir jetonla oynanan bir oyun düşünün. n = ilk "tura"dan önceki yazı tura sayısı olsun. Bu oyunda 2n kazanırsınız. Kaç dolar kazanmayı bekliyorsun? X, kazancınızı temsil eden rastgele bir değişken olsun.
 
 ![formul3](https://raw.githubusercontent.com/suhap/Probability/master/resource/4f-3.png)
+
+### Beklenen Değerin Özellikleri
+
+Beklentiler doğrusallığı korur, bu da şu anlama gelir:
+
+E[aX +b] = aE[X] +b
+
+Rastgele değişkenler eklediğiniz durumda da geçerlidir. Rastgele değişkenler arasındaki ilişkiden bağımsız olarak, toplamın beklentisi, beklentilerin toplamına eşittir. A ve B rasgele değişkenleri için:
+
+E[A+B] = E[A] +E[B]
+
+Bir rastgele değişken X'in g(X) fonksiyonunun beklenen değerini hesaplamak için kullanılan, X'in olasılık dağılımını bilen, ancak g'nin dağılımını açıkça bilmediği zaman, Bilinçsiz İstatistikçi Yasası adlı harika bir yasa vardır. (X).
+
+![formul4](https://raw.githubusercontent.com/suhap/Probability/master/resource/4f-4.png)
+
+Örneğin, rastgele bir değişkenin (ikinci an olarak adlandırılır) karesinin beklentisini hesaplamak için bilinçsiz istatistikçinin yasasını uygulayalım.
+
+![formul5](https://raw.githubusercontent.com/suhap/Probability/master/resource/4f-5.png)
