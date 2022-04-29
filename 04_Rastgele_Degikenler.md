@@ -13,8 +13,9 @@ Rastgele değişkenler ve olaylar için aynı gösterimi kullanmamıza rağmen (
 Rastgele değişkenlerin kullanılması, problemlerin ayrıştırılmasına yardımcı olan uygun bir gösterim tekniğidir. Birçok farklı rasgele değişken türü vardır (gösterge, ikili, seçim, Bernoulli, vb.). Rastgele değişken türlerinin iki ana ailesi ayrık ve süreklidir. Şimdilik ayrık rastgele değişkenler etrafında sezgi geliştireceğiz.
 
 ## Olasılık Kütle Fonksiyonu PMF
+Kesikli bir rasgele değişken için bilinmesi gereken en önemli şey, rasgele değişkenin alabileceği değerler ile rasgele değişkenin söz konusu değeri alma olasılığı arasındaki eşleştirmedir. Matematikte çağrışım fonksiyonları diyoruz.
 
-
+Olasılık kütle fonksiyonları (PMF), rastgele bir değişkenin olası sonuçlarını karşılık gelen olasılıklarla eşleştiren bir fonksiyondur. Bu bir fonksiyon olduğu için, x ekseninin rastgele değişkenin alabileceği değerler olduğu ve y ekseninin rastgele değişkenin söz konusu değeri alma olasılığı olduğu PMF grafiklerini çizebiliriz:
 
 ![resim1](https://raw.githubusercontent.com/suhap/Probability/master/resource/3-1.png)
 Şekil 1: Koşullu Olasılık Sezgisi
