@@ -13,37 +13,34 @@ Rastgele değişkenler ve olaylar için aynı gösterimi kullanmamıza rağmen (
 Rastgele değişkenlerin kullanılması, problemlerin ayrıştırılmasına yardımcı olan uygun bir gösterim tekniğidir. Birçok farklı rasgele değişken türü vardır (gösterge, ikili, seçim, Bernoulli, vb.). Rastgele değişkenler ayrık ve sürekli olacak şekilde iki bölüme ayrılabilir. Aşağıdaki tanımlar ayrık rastgele değişkenler incelenecektir.
 
 ## Olasılık Kütle Fonksiyonu PMF
-Kesikli bir rasgele değişken için bilinmesi gereken en önemli şey, rasgele değişkenin alabileceği değerler ile rasgele değişkenin söz konusu değeri alma olasılığı arasındaki eşleştirmedir. Matematikte çağrışım fonksiyonları diyoruz.
+Kesikli bir rasgele değişken için bilinmesi gereken en önemli şey, rasgele değişkenin alabileceği değerler ile rasgele değişkenin söz konusu değeri alma olasılığı arasındaki eşleştirmedir. 
 
-Olasılık kütle fonksiyonları (PMF), rastgele bir değişkenin olası sonuçlarını karşılık gelen olasılıklarla eşleştiren bir fonksiyondur. Bu bir fonksiyon olduğu için, x ekseninin rastgele değişkenin alabileceği değerler olduğu ve y ekseninin rastgele değişkenin söz konusu değeri alma olasılığı olduğu PMF grafiklerini çizebiliriz:
+Olasılık kütle fonksiyonları (PMF), rastgele bir değişkenin olası sonuçlarını karşılık gelen olasılıklarla eşleştiren bir fonksiyondur. Bu bir fonksiyon olduğu için, x ekseninin rastgele değişkenin alabileceği değerler olduğu ve y ekseninin rastgele değişkenin söz konusu değeri alma olasılığı olduğu PMF grafiklerini çizilebilir:
 
 ![resim1](https://raw.githubusercontent.com/suhap/Probability/master/resource/4-1.png)
 
 Şekil 1: PMF foksiyonu
 
-Bu Olasılık Kütle Fonksiyonlarının belirtilmesinin birçok yolu vardır. Bir grafik çizebiliriz. Tüm olası olaylar için tüm olasılıkları listeleyen bir tablomuz (veya sizin için CS çalışanları için bir Harita) olabilir. Ya da matematiksel bir ifade yazabiliriz. Örneğin, iki zarın toplamı olan rastgele değişken X'i ele alalım. Olasılık kütle fonksiyonu, şeklin sağındaki grafik ile tanımlanabilir. Şu denklem kullanılarak da tanımlanabilirdi:
+Olasılık Kütle Fonksiyonlarının belirtilmesinin birçok yolu vardır. Grafik üzerinde gösterim yapılabilir. Tüm olası olaylar için tüm olasılıkları listeleyen bir tablo oluşturulabilir. Ya da matematiksel bir ifade yazılabilir. Örneğin, X rastgele değişkeni iki zarın toplamı olsun. Olasılık kütle fonksiyonu, yukarıdaki şeklin sağındaki grafik ile tanımlanabilir. Bu rastegele değişken aşağıdaki formül kullanılarak tanımlanabilir:
 
 ![formul1](https://raw.githubusercontent.com/suhap/Probability/master/resource/4f-1.png)
 
-Olasılık kütle fonksiyonu, pX (x), X'in x değerini alma olasılığını tanımlar. Yeni pX (x) gösterimi, P(X = x) yazmak için basitçe farklı gösterimdir. Bu yeni gösterimi kullanmak, bir fonksiyon belirlediğimizi daha belirgin hale getirir. Birkaç x değeri deneyin ve pX (x) değerini şekildeki grafikle karşılaştırın. Aynı olmalılar.
+Olasılık kütle fonksiyonu, pX(x), X'in x değerini alma olasılığını tanımlar. Yeni pX(x) gösterimi, P(X = x) yazmak için basit bir gösterimdir. Bu yeni gösterimi kullanmak, bir fonksiyon belirlediğimizi daha belirgin hale getirir.
 
-## Beklenen değer
+## Beklenen değer (Ortalama, Beklenti, Ağırlıklı Ortalama, Kütle Merkezi, 1. Moment.)
 Rastgele değişken için ilgili bir istatistik, temsil ettiği deneyin birçok tekrarı üzerinden rastgele değişkenin ortalama değeridir. Bu ortalama, Beklenen Değer olarak adlandırılır.
 
 Kesikli bir rasgele değişken X için Beklenen Değer şu şekilde tanımlanır:
 
 ![formul2](https://raw.githubusercontent.com/suhap/Probability/master/resource/4f-2.png)
 
-Başka birçok adla gider: Ortalama, Beklenti, Ağırlıklı Ortalama, Kütle Merkezi, 1. Moment.
-
 ### örnek 1
-Diyelim ki 6 Taraflı bir Zar attınız ve rastgele bir değişken X, yuvarlamanın sonucunu temsil ediyor. E[X] nedir?
-Bu, ortalama değerin ne olduğunu sormakla aynıdır.
+Zar atma deneyinde rastgele değişken X ise; E[X] nedir? Bu durum, ortalama değerin ne olduğunu sormakla aynıdır.
 
 E[X] = 1(1/6) +2(1/6) +3(1/6) +4(1/6) +5(1/6) +6(1/6) = 7/2
 
 ### Örnek 2
-Diyelim ki bir okulda 5, 10 ve 150 öğrenciden oluşan 3 sınıf var. Rastgele eşit olasılığa sahip bir sınıf seçersek ve X = seçilen sınıfın büyüklüğüne izin verirsek:
+Bir okulda 5, 10 ve 150 öğrenciden oluşan 3 sınıf var. Rastgele eşit olasılığa sahip bir sınıf seçilirse ve X = seçilen sınıfın büyüklüğüne izin verirsek:
 
 E[Y] = 5(1/3) +10(1/3) +150(1/3) = 165/3 = 55
 
