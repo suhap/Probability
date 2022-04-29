@@ -78,4 +78,4 @@ Bir rastgele değişken X'in g(X) fonksiyonunun beklenen değerini hesaplamak i�
 
 Beklenti gerçekten yararlı bir istatistiktir, ancak olasılık kütle fonksiyonunun ayrıntılı bir görünümünü vermez. Üç farklı not veren tarafından öğrenci ödevlerine verilen notların dağılımını tanımlayan aşağıdaki 3 dağılımı (PMF) göz önünde bulundurun:
 
-![sekil](https://raw.githubusercontent.com/suhap/Probability/master/resource/4-2.png)
+![sekil2](https://raw.githubusercontent.com/suhap/Probability/master/resource/4-2.png)
