@@ -73,3 +73,9 @@ Bir rastgele değişken X'in g(X) fonksiyonunun beklenen değerini hesaplamak i�
 Örneğin, rastgele bir değişkenin (ikinci an olarak adlandırılır) karesinin beklentisini hesaplamak için bilinçsiz istatistikçinin yasasını uygulayalım.
 
 ![formul5](https://raw.githubusercontent.com/suhap/Probability/master/resource/4f-5.png)
+
+## Varyans
+
+Beklenti gerçekten yararlı bir istatistiktir, ancak olasılık kütle fonksiyonunun ayrıntılı bir görünümünü vermez. Üç farklı not veren tarafından öğrenci ödevlerine verilen notların dağılımını tanımlayan aşağıdaki 3 dağılımı (PMF) göz önünde bulundurun:
+
+![sekil2](https://raw.githubusercontent.com/suhap/Probability/master/resource/4-2.png)
