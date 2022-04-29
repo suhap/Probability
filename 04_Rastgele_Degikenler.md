@@ -17,5 +17,5 @@ Kesikli bir rasgele değişken için bilinmesi gereken en önemli şey, rasgele 
 
 Olasılık kütle fonksiyonları (PMF), rastgele bir değişkenin olası sonuçlarını karşılık gelen olasılıklarla eşleştiren bir fonksiyondur. Bu bir fonksiyon olduğu için, x ekseninin rastgele değişkenin alabileceği değerler olduğu ve y ekseninin rastgele değişkenin söz konusu değeri alma olasılığı olduğu PMF grafiklerini çizebiliriz:
 
-![resim1](https://raw.githubusercontent.com/suhap/Probability/master/resource/3-1.png)
-Şekil 1: Koşullu Olasılık Sezgisi
+![resim1](https://raw.githubusercontent.com/suhap/Probability/master/resource/4-1.png)
+Şekil 1: PMF foksiyonu
