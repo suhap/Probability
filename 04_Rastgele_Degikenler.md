@@ -31,5 +31,27 @@ Olasılık kütle fonksiyonu, pX (x), X'in x değerini alma olasılığını tan
 Rastgele değişken için ilgili bir istatistik, temsil ettiği deneyin birçok tekrarı üzerinden rastgele değişkenin ortalama değeridir. Bu ortalama, Beklenen Değer olarak adlandırılır.
 
 Kesikli bir rasgele değişken X için Beklenen Değer şu şekilde tanımlanır:
+
 ![formul2](https://raw.githubusercontent.com/suhap/Probability/master/resource/4f-2.png)
 
+Başka birçok adla gider: Ortalama, Beklenti, Ağırlıklı Ortalama, Kütle Merkezi, 1. Moment.
+
+### örnek 1
+Diyelim ki 6 Taraflı bir Zar attınız ve rastgele bir değişken X, yuvarlamanın sonucunu temsil ediyor. E[X] nedir?
+Bu, ortalama değerin ne olduğunu sormakla aynıdır.
+
+E[X] = 1(1/6) +2(1/6) +3(1/6) +4(1/6) +5(1/6) +6(1/6) = 7/2
+
+### Örnek 2
+Diyelim ki bir okulda 5, 10 ve 150 öğrenciden oluşan 3 sınıf var. Rastgele eşit olasılığa sahip bir sınıf seçersek ve X = seçilen sınıfın büyüklüğüne izin verirsek:
+
+E[Y] = 5(1/3) +10(1/3) +150(1/3) = 165/3 = 55
+
+Bunun yerine rasgele eşit olasılığa sahip bir öğrenci seçersek ve Y = öğrencinin bulunduğu sınıfın büyüklüğüne izin verirsek
+
+E[X] = 5(5/165) +10(10/165) +150(150/165) = 22635/165 = 137
+
+### Örnek 3
+P = 0,5 ile tura gelen adil bir jetonla oynanan bir oyun düşünün. n = ilk "tura"dan önceki yazı tura sayısı olsun. Bu oyunda 2n kazanırsınız. Kaç dolar kazanmayı bekliyorsun? X, kazancınızı temsil eden rastgele bir değişken olsun.
+
+![formul3](https://raw.githubusercontent.com/suhap/Probability/master/resource/4f-3.png)
