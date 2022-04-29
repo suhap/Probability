@@ -103,3 +103,16 @@ Varyans, özellikle iki dağılımın yayılmasını karşılaştırmak için ku
 İstatistikçilerin yayılmayı ölçmek için kullanabilecekleri pek çok ölçü vardır ve bu noktada sizi rastgele değişken yayılımını bir sayıya dönüştürmenin başka yollarını düşünmeye teşvik ediyorum. Rastgele değişkenin bu aralıkta bir değer alma olasılığının %50 olduğu beklentisinden ne kadar uzaklaşabileceğinizi, aklınıza gelebilecek bazı fikirler içerebilir. Yukarıda tanımlandığı gibi varyans, en yaygın ölçü olmuştur (belki de hesaplanması kolay olduğu için), ancak başka bir evrende alternatif bir istatistik geliştirebilirdik.
 
 ![formul6](https://raw.githubusercontent.com/suhap/Probability/master/resource/4f-6.png)
+
+### Varyans Kimlikleri
+
+Varyans hakkında kanıtlanabilir bir özdeşlik şudur:
+
+Var(aX +b) = a^2Var(X)
+
+Bu (kanıtlanabilir) denklem, rastgele bir değişkene skaler bir değer (b) eklerseniz, dağılımın beklentisini değiştireceğini, ancak beklenti etrafındaki yayılımın aynı olacağını iddia eder. Bununla birlikte, rastgele değişkeninizi bir skaler a ile çarparsanız, yayılımı uzatır ve elde edilen dağılım, a^2 kat daha büyük bir varyansa sahip olur.
+
+### örnek 1
+X = 6 taraflı bir kalıbın yuvarlanma değeri olsun. E[X] = 7/2 olduğunu hatırlayın. Önce E[X^2]'yi hesaplayalım
+
+![formul7](https://raw.githubusercontent.com/suhap/Probability/master/resource/4f-7.png)
