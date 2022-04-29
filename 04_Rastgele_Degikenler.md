@@ -13,3 +13,8 @@ Rastgele değişkenler ve olaylar için aynı gösterimi kullanmamıza rağmen (
 Rastgele değişkenlerin kullanılması, problemlerin ayrıştırılmasına yardımcı olan uygun bir gösterim tekniğidir. Birçok farklı rasgele değişken türü vardır (gösterge, ikili, seçim, Bernoulli, vb.). Rastgele değişken türlerinin iki ana ailesi ayrık ve süreklidir. Şimdilik ayrık rastgele değişkenler etrafında sezgi geliştireceğiz.
 
 ## Olasılık Kütle Fonksiyonu PMF
+
+
+
+![resim1](https://raw.githubusercontent.com/suhap/Probability/master/resource/3-1.png)
+Şekil 1: Koşullu Olasılık Sezgisi
