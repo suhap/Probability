@@ -23,6 +23,6 @@ Olasılık kütle fonksiyonları (PMF), rastgele bir değişkenin olası sonuçl
 
 Bu Olasılık Kütle Fonksiyonlarının belirtilmesinin birçok yolu vardır. Bir grafik çizebiliriz. Tüm olası olaylar için tüm olasılıkları listeleyen bir tablomuz (veya sizin için CS çalışanları için bir Harita) olabilir. Ya da matematiksel bir ifade yazabiliriz. Örneğin, iki zarın toplamı olan rastgele değişken X'i ele alalım. Olasılık kütle fonksiyonu, şeklin sağındaki grafik ile tanımlanabilir. Şu denklem kullanılarak da tanımlanabilirdi:
 
-![formul1](https://raw.githubusercontent.com/suhap/Probability/master/resource/4f-1.png)
+![formul](https://raw.githubusercontent.com/suhap/Probability/master/resource/4f-1.png)
 
 Olasılık kütle fonksiyonu, pX (x), X'in x değerini alma olasılığını tanımlar. Yeni pX (x) gösterimi, P(X = x) yazmak için basitçe farklı gösterimdir. Bu yeni gösterimi kullanmak, bir fonksiyon belirlediğimizi daha belirgin hale getirir. Birkaç x değeri deneyin ve pX (x) değerini şekildeki grafikle karşılaştırın. Aynı olmalılar.
