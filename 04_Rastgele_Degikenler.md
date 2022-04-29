@@ -26,3 +26,10 @@ Bu Olasılık Kütle Fonksiyonlarının belirtilmesinin birçok yolu vardır. Bi
 ![formul1](https://raw.githubusercontent.com/suhap/Probability/master/resource/4f-1.png)
 
 Olasılık kütle fonksiyonu, pX (x), X'in x değerini alma olasılığını tanımlar. Yeni pX (x) gösterimi, P(X = x) yazmak için basitçe farklı gösterimdir. Bu yeni gösterimi kullanmak, bir fonksiyon belirlediğimizi daha belirgin hale getirir. Birkaç x değeri deneyin ve pX (x) değerini şekildeki grafikle karşılaştırın. Aynı olmalılar.
+
+## Beklenen değer
+Rastgele değişken için ilgili bir istatistik, temsil ettiği deneyin birçok tekrarı üzerinden rastgele değişkenin ortalama değeridir. Bu ortalama, Beklenen Değer olarak adlandırılır.
+
+Kesikli bir rasgele değişken X için Beklenen Değer şu şekilde tanımlanır:
+![formul2](https://raw.githubusercontent.com/suhap/Probability/master/resource/4f-2.png)
+
