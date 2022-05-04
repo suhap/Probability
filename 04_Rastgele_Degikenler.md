@@ -1,14 +1,16 @@
 # Rastgele Değişkenler
-Rastgele Değişken, olasılıksal olarak farklı değerler alan bir değişkendir. Rastgele Değişkenin programlama dilindeki  değişkenler gibi düşünülebilir. Değerler alırlar, türleri vardır ve uygulanabilir oldukları alanlara sahiptirler. Rastgele değişken  bir değer alırsa meydana gelen olayları tanımlayabiliriz  (örneğin, değişken 5'e eşit mi, değişken 8'den küçük mü). 
+Programlama dilindeki değişkenlere benzeyen Rastgele Değişkenler, olasılıksal olarak farklı değerler alan bir değişkendir. Rastgele değişkenler değerler alırlar, türleri vardır ve uygulanabilir oldukları alanlara sahiptirler. 
 
-Örnek olarak, üç para kullanarak yazı/tura atılsın. Her denemedeki “tura” sayısı X rasgele değişkeni ile ifade edilsin. Aşağıdaki gösterimi kullanarak X'nin farklı değerler alma olasılığı gösterilebilir:
+## Örnek: 
+Üç para kullanılarak yazı tura atalım. Bu olaydaki tura sayısı X rastgele değişkeni ile ifade edilsin. Aşağıda X rastgele değişkeninin farklı değerler alma olasılığı gösterilmektedir.
+
 • P(X = 0) = 1/8 (Y, Y, Y)
 • P(X = 1) = 3/8 (T, Y, Y), (Y, T, Y), (Y, Y, T)
 • P(X = 2) = 3/8 (T, T, Y), (T, Y, T), (Y, T, T)
 • P(X = 3) = 1/8 (T, T, T)
 • P(X ≥ 4) = 0
 
-Rastgele değişkenler ve olaylar için aynı gösterimi kullanmamıza rağmen (her ikisi de büyük harf kullanır) bunlar farklı kavramlardır. Bir olay bir senaryodur, bir rastgele değişken bir nesnedir. Rastgele bir değişkenin belirli bir değeri (veya değer aralığını) aldığı senaryo bir olaydır. Olaylar için E,F,G harflerini ve rastgele değişkenler için X,Y,Z harflerini kullanılacaktır.
+Rastgele değişkenler ve olaylar için aynı gösterimi kullılmasına rağmen (her ikisi de büyük harf kullanır) farklı kavramlardır. Olay bir senaryo olarak düşünülürse  rastgele değişken bir nesnedir. Rastgele bir değişkenin belirli bir değeri (veya değer aralığını) aldığı senaryo bir olaydır. Olaylar için E,F,G harflerini ve rastgele değişkenler için X,Y,Z harflerini kullanılacaktır.
 
 Rastgele değişkenlerin kullanılması, problemlerin ayrıştırılmasına yardımcı olan uygun bir gösterim tekniğidir. Birçok farklı rasgele değişken türü vardır (gösterge, ikili, seçim, Bernoulli, vb.). Rastgele değişkenler ayrık ve sürekli olacak şekilde iki bölüme ayrılabilir. Aşağıdaki tanımlar ayrık rastgele değişkenler incelenecektir.
 
